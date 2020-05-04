@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Justin Dermawan Ikhsan">
+    <title>About J</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+          background-color :white;
+        }
+        
+        #navigationli{
+            display: inline;
+        }
+        
+        .topmenu {
+          font-weight: bold;
+          color:#282669;
+          text-align: center;
+          font-family: 'Century Gothic';
+          display: inline;
+          padding: 6px 24px 6px 24px;
+          margin: 0px 4px 0px 4px;
+        }
+        .topmenu:hover{
+            background-color:#282669;
+            color: #ffffff;
+            border-radius: 16px;
+        }
+        #para1 {
+          font-family: 'Century Gothic';
+          font-size: 24px;
+          color:#ffffff;
+          margin:0px;
+        }
+        #para2 {
+          font-family: 'Century Gothic';
+          font-size: 24px;
+          color:#282669;
+        }
+        #profile {
+        margin-top: -256px;
+        width: 600px;
+        height: auto;
+        }
+        #icon {
+            width: 32px;
+            height: auto;
+        }
+                /* Three image containers (use 25% for four, and 50% for two, etc) */
+        .column {
+        float: right;
+        padding: 5px;
+        }
+
+        /* Clear floats after image containers */
+        .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+
+        #profiletab, #projecttab {
+            background-color: #282669;
+            border-radius:64px;
+            box-shadow: 2px 3px 19px 1px rgba(0,0,0,0.4);
+            padding: 20px;
+            margin: 64px auto auto 320px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .max-lines {
+            display: block;/* or inline-block */
+            text-overflow: ellipsis;
+            word-wrap: break-word;
+            overflow: hidden;
+            text-align:justify;
+            max-width: 30em;
+        }
+        </style>
+</head>
+<body>
+    <div style="width: fit-content;">
+    <header>
+        <div style="min-width: 960px; padding: 64px 0px 0px 0px;">
+            <nav>
+                <ul style="position: absolute;right:300px;top:48px;">
+                    <li id="navigationli"><a href="#profiletab" class="topmenu" style="text-decoration: none;">About</a></li>
+                    <li id="navigationli"><a href="#projecttab" class="topmenu" style="text-decoration: none;">Projects</a></li>
+                    <li id="navigationli"><a href="#contacttab" class="topmenu" style="text-decoration: none;">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="row" id="profiletab">
+            <div class="column" >
+                <img id="profile" style='vertical-align:middle;margin:0px 16px -24px 64px;' src='src/CROPPED.png'></img>
+            </div>
+            <div  class="column">
+                <h1 style="visibility: hidden;">About</h1>
+                <p id='para1'>HELLO EVERYONE, I AM </p>
+                <p id='para1' style="font-size: 36pt;">Justin Dermawan Ikhsan</p>
+                <p id='para1'>or you can call me JJ.</p>
+                <br/>
+                <p id='para1' class="max-lines" style="font-size:18px ;">I am currently a first year university student based on Bandung, Indonesia. I am interested in UI/UX and graphic design, I have done several projects and submission regarding to those topics. </p>
+                <br style="display:block;content:'';margin-top:50px"/>
+                <a href="https://www.instagram.com/jjojas" target="_blank"><img id="icon" src="src/ico_instagram.png"></img></a>
+                <a href="https://www.linkedin.com/in/justinjojas/" target="_blank"><img id="icon" src="src/ico_linkedin.png"></img></a>
+                <br style="display:block;content:'';margin-top:50px"/>
+                <p id='para1' style="font-weight: bold;font-size: 20px;">Information System and Technology Student </p>
+                <p id='para1' style="font-weight: bold;font-size: 20px;">Bandung Institute of Technology, Indonesia</p>
+            </div>    
+        </div>
+        <div class="row" id="projecttab">
+            <div class="column" >
+                <p id='para1'>My Projects</p>
+                <ul>
+                    <li id='para1'>Lorem Ipsum</li>
+                    <li id='para1'>Lorem Ipsum</li>
+                    <li id='para1'>Lorem Ipsum</li>
+                </ul>
+            </div>
+            <div  class="column">
+                <h1 style="visibility: hidden;">Projects</h1>
+                <p id='para1'>My Accomplishments</p>
+                <ul>
+                    <li id='para1'>Lorem Ipsum</li>
+                    <li id='para1'>Lorem Ipsum</li>
+                    <li id='para1'>Lorem Ipsum</li>
+                </ul>
+            </div>    
+        </div>
+    </main>
+    <footer>
+        <!-- <a href="https://www.instagram.com/jjojas" target="_blank"><ul>Instagram</ul></a> -->
+    </footer>
+</div>
+</body>
+</html>
