@@ -9,10 +9,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <style>
-  .fakeimg {
-    height: 200px;
-    background: #aaa;
-  }
   #button{
       font-weight: bold;
       color: #1e4a87;
@@ -22,35 +18,89 @@
         transition: background-color .3s linear;
         background-color:#e6e6e6;
   }
-  .btn-tec{
-      background-color: #1e4a87;
-  }
   .konten{
+      font-size: 64px;
       color:white;
+      text-shadow: 2px 2px 8px #000000;
   }
   .tab{
       text-indent: 2em;
   }
   .background{
-    background-image:url('../src/pop.jpg');
+    background-image:url('src/pop.jpg');
     background-repeat:no-repeat;
-    background-size:contain;
+    background-size:auto;
     background-position:center;
   }
+  .media{
+    background-color: white;
+  }
+  .btn-tec,
+  .btn-tec:hover,
+  .btn-tec:active,
+  .btn-tec:visited,
+  .btn-tec:focus {
+    background-color: #1e4a87;
+    border-color:#1e4a87;
+  }
+  .btn-ig,
+  .btn-ig:hover,
+  .btn-ig:active,
+  .btn-ig:visited,
+  .btn-ig:focus{
+    background-color:#833AB4;
+    border-color:#833AB4;
+  }
+  .btn-ln,
+  .btn-ln:hover,
+  .btn-ln:active,
+  .btn-ln:visited,
+  .btn-ln:focus {
+    background-color: #22ba4f;
+    border-color:#22ba4f;
+  }
+  .btn-md,
+  .btn-md:hover,
+  .btn-md:active,
+  .btn-md:visited,
+  .btn-md:focus {
+    background-color:black;
+    border-color:black;
+  }
+  .btn-sp,
+  .btn-sp:hover,
+  .btn-sp:active,
+  .btn-sp:visited,
+  .btn-sp:focus {
+    background-color:#1ed760;
+    border-color:#1ed760;
+  }
+  .btn-ld,
+  .btn-ld:hover,
+  .btn-ld:active,
+  .btn-ld:visited,
+  .btn-ld:focus {
+    background-color:#0073b1;
+    border-color:#0073b1;
+  }
+  html {
+            scroll-behavior: smooth;
+        }
   </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-sm navbar-dark" style="left:80%">
-  <button class="navbar-toggler btn-tec" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  <img style="margin-left:1.2em;height:8em;" class="float-left" src="src/banner.png">
+<nav class="navbar navbar-expand-sm navbar-dark ">
+  <button class="navbar-toggler btn-tec justify-content-end" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" id="button" href="#">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="button" href="#">Media</a>
+        <a class="nav-link" id="button" href="#media">Media</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" id="button" href="#">Collaboration</a>
@@ -58,20 +108,37 @@
     </ul>
   </div>  
 </nav>
-
-<div class="container" style="margin-top:30px;background-color:#1e4a87;border-radius:16px;box-shadow: 2px 3px 19px 1px rgba(0,0,0,0.4);" >
-    <div class="col" style="padding-top: 20px;">
-      <h2 class="konten">Techno Entrepreneur Club ITB</h2>
-      <h5 class="konten"><i>Since 2004</i></h5>
-    <img style="height:400px;width:auto;" src='src/pop.jpg'></img>
-     <p style="font-size:12px;color:#aaa"><i>Dokumentasi Dewan Jenderal 2019 - TEC ITB</i></p>
-      <p class="tab konten">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum consequat suscipit. In eu maximus ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio urna, porta ac blandit sed, tempus non risus. In nisi lorem, vestibulum eu velit in, elementum ultrices felis. Aenean ullamcorper odio in nisl rutrum viverra. Pellentesque efficitur faucibus sem nec posuere. Morbi a feugiat enim. Etiam tempor lectus cursus, gravida felis vitae, lacinia nibh. Proin tempor metus quis elit sollicitudin pulvinar. Integer nec ipsum massa. Donec scelerisque in nisl in laoreet. Aliquam pharetra dui et dignissim fermentum. Nunc imperdiet mauris velit, sit amet venenatis sapien euismod eget. Sed hendrerit dui ac felis consectetur dictum.</p>
-      <p class="tab konten">Fusce vulputate ultricies rutrum. In dignissim diam arcu, eget cursus dui facilisis in. Nulla dictum ac ante ut feugiat. Ut varius nibh iaculis, molestie eros sit amet, pulvinar quam. Nullam ut placerat eros. Integer laoreet ipsum justo, sed euismod sem lobortis quis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla tempor justo cursus, varius magna eget, venenatis eros. Etiam tempor risus at elit pharetra facilisis. Ut sagittis nec ex eu pulvinar.</p>
+<div class="container-fluid background" style="margin-top:.2em">
+    <div class="col" style="padding-top: 4em;">
+      <h2 class="konten text-center">Techno Entrepreneur Club ITB</h2>
+      <h5 class="konten text-center " style="font-size:28px;"><i>Since 2004</i></h5>
+      <div class="text-center">
+        <div class="col" style="padding-left: 30em;padding-right:30em;">
+          <p class="konten text-center" style="font-size: 18px;color:white">Techno Entrepreneur Club ITB adalah sebuah unit kegiatan mahasiswa di Institut Teknologi Bandung yang menghimpun mahasiswa dengan minat <b>kewirausahaan</b>. Hingga saat ini anggota aktif TEC berjumlah 270 orang. Dies Natalis TEC sendiri diperingati pada tanggal 28 Februari.</p>
+          <br><br><br><br>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg btn-tec" href="#media">Connect</button>
+      </div>
       <br>
     </div>
   </div>
 </div>
-
+<div class="media container-fluid" style="margin-top:.2em">
+  <div class="col" style="padding-top:1.5em;" id="media">
+    <h2 class="text-center">Media</h2>
+    <br><br>
+      <div class="col text-center">
+        <p class="text-wrap" style="font-size: 18px;color:#1e4a87;">Untuk melihat dan mendapatkan konten terbaru dari TEC ITB, ikuti kami di kanal lainnya:</p>
+        <a type="button" class="btn btn-primary btn-ig btn-lg" href="http://instagram.com/tec.itb" target="_blank">Instagram</a>
+        <a type="button" class="btn btn-primary btn-ln btn-lg" href="https://line.me/R/ti/p/@bic2916s" target="_blank">Line OA</a>
+        <a type="button" class="btn btn-primary btn-sp btn-lg" href="#">Spotify</button>
+        <a type="button" class="btn btn-primary btn-md btn-lg" href="https://medium.com/@tec_itb" target="_blank">Medium</a>
+        <a type="button" class="btn btn-primary btn-ld btn-lg" href="https://www.linkedin.com/company/techno-entrepreneur-club-itb/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+<br><br>
+</div>
 <div class="jumbotron text-center" style="margin-bottom:0">
   <p><b>Developed by TEC ITB</b></p>
 </div>
