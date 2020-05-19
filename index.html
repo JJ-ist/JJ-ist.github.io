@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>J Pages</title>
+  <title>About J</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href ="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -9,20 +9,182 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <style>
+  #nav-button{
+    font-weight: bold;
+    color: gray;
+    padding: 6px 24px 6px 24px;
+  }
+  #nav-button:hover{
+        transition: color .3s linear;
+        color:white;
+  }
+  #navbar{
+      background-color: #2f2f2f;
+      padding: 2em 3em;
+      box-shadow:;
+  }
+  #white-content{
+    color: rgb(47, 47, 47)
+  }
+  #image{
+    background-color: wheat;
+  }
+  .cloud{
+    background-attachment: scroll;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 700px;
+    background-color:#2f2f2f;
+    color:white;
+    padding:3em 2em
+  }
+  #cloud{
+    background-image:url('src/cloud.png');
+  }
+  #cloud2{
+    background-image:url('src/cloud2.png');
+    background-position: left;
+    background-size:800px;
+  }
+  @media only screen and (max-device-width: 1366px) {
+  #cloud,#cloud2 {
+    background-image:none;
+  }
+}
+  html {
+    scroll-behavior: smooth;
+  }
   </style>
 </head>
 <body>
-  <div class="row d-flex justify-content-center" style="padding-top: 10em;">
-      <a type="button" class="btn btn-primary btn-lg" href="/tec.html" target="_blank">TEC Website</a>
-   </div>
-  <div class="row d-flex justify-content-center" style="padding-top: 2em;">
-    <a type="button" class="btn btn-primary btn-lg" href="#">Project #1</a>
+<nav class="navbar navbar-expand-sm navbar-dark justify-content-end" id="navbar">
+  <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" id="nav-button" href="#About">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="nav-button" href="#Project">Project</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="nav-button" href="#Contact">Contact</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+<div class="container-fluid">
+    <div class="row">
+    <div class="col d-none d-lg-block justify-content-center text-center" style="padding-left: 15em;">
+        <img src="src/picJJcol.png" style="margin-top:-4em;width: 500px;">
     </div>
-  <div class="row d-flex justify-content-center" style="padding-top: 2em;">
-    <a type="button" class="btn btn-primary btn-lg" href="#">Project #2</a>
+    <div class="col" style="padding-top: 10em;padding-right: 5em">
+      <h2 class="white-content" style="font-size:56px;color:#3fa9f5">Justin Dermawan Ikhsan</h2>
+      <h5 class="white-content" style="font-size:28px;">Information System and Technology Student | UI/UX Enthusiats</h5>
+      <br>
+      <p class="white-content" style="font-size:20px">Justin (often called "Jj") is a first year student majoring Information System and Technology at Institut Teknologi Bandung. His experiences include UI/UX design for small-scale projects, and (will add later). He is also interested in big data, and machine learning.</p>
+      <br>
     </div>
-  <div class="row d-flex justify-content-center" style="padding-top: 2em;">
-    <a type="button" class="btn btn-primary btn-lg" href="#">Project #3</a>
+  </div>
+</div>
+<div class="media container-fluid cloud" id="cloud" >
+  <div class="row container-fluid">
+  <div class="col" style="padding-top:1em;" id="About">
+    <h2 class="text-left" style="font-size: 48px;">Education</h2>
+      <div class="row justify-content-center" style="padding:2.2em 4em">
+        <div class="col-md-auto d-none d-lg-block" style="padding-top:4em">
+          <img src="src/bar.png" style="margin-top:-4em">
+        </div>
+        <div class="col d-flex justify-content-begin">
+          <div>
+            <h3 style="color:#3fa9f5">SMPN 1 Citeureup</h3>
+            <h5>2013-2016</h5>
+            <br><br><br><br><br><br><br><br>
+            <h3 style="color:#3fa9f5">SMAN 2 Cibinong</h3>
+            <h5>2016-2019</h5>
+            <p><i>Science Program</i></p>
+            <br><br><br><br><br><br>
+            <h3 style="color:#3fa9f5">Institut Teknologi Bandung</h3>
+            <h5>2019-Now</h5>
+            <p><i>STI</i></p>
+          </div>
+        </div>
+      </div>
+      
     </div>
+  </div>
+<br>
+  </div>
+  <div class="media container-fluid cloud" id="cloud2">
+    <div class="row container-fluid">
+    <div class="col" style="padding-top:1em;" id="About">
+      <h2 class="text-right text-wrap" style="font-size: 48px;">Achievement</h2>
+        <div class="row justify-content-center text-right" style="padding:2.2em 4em">
+          <div class="col d-flex justify-content-end">
+            <div>
+              <h3 style="color:#3fa9f5">Lorem Ipsum</h3>
+              <h5>Lorem Ipsum</h5>
+              <h5>2018</h5>
+              <br><br><br>
+              <h3 style="color:#3fa9f5">Lorem Ipsum</h3>
+              <h5>Lorem Ipsum</h5>
+              <h5>2018</h5>
+              <br><br><br>
+              <h3 style="color:#3fa9f5">Lorem Ipsum</h3>
+              <h5>Lorem Ipsum</h5>
+              <h5>2018</h5>
+              <br><br><br>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  <br>
+    </div>
+    <div class="media container-fluid" style="color#2f2f2f;background-color:white">
+      <div class="col" style="padding-top:1.5em;padding-bottom:1.5em" id="Project">
+        <h2 class="text-center" style="color:#3fa9f5;">My Project</h2>
+        <br><br>
+          <div class="col d-flex justify-content-center text-center">
+            <div class="container">
+              <div class="row">
+                <div class="col project-shadow " >
+                  <img src="src/ux.png" alt="UI/UX" style="width:200px">
+                  <h3 style="padding-top:.2em;padding-bottom: .5em;">UI/UX</h3>
+                  <a type="button" class="btn btn-primary btn-lg btn-ig" href="">More</a>
+                </div>
+                <div class="col project-shadow " >
+                  <img src="src/gd.png" alt="Graphic Design" style="width:200px">
+                  <h3 style="padding-top:.2em;padding-bottom: .5em;">Design</h3>
+                  <a type="button" class="btn btn-primary btn-lg btn-ig" target="_blank" href="">More</a>
+                </div><div class="col project-shadow " >
+                  <img src="src/code.png" alt="Code" style="width:200px">
+                  <h3 style="padding-top:.2em;padding-bottom: .5em;">Code</h3>
+                  <a type="button" class="btn btn-primary btn-lg btn-ig" href="">More</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    <br>
+    </div>
+<footer style="padding:2em 2em;background-color: #2f2f2f;color:white" id="Contact">
+  <div class="text-center">
+    <h5 style="padding-bottom: 2em;">Contact</h5>
+  </div>
+  <div class="col d-flex justify-content-center text-center">
+    <div style="container">
+      <div class="row">
+        <a target="_blank" href="https://www.instagram.com/jjojas" style="padding: 0em 1em;"><img src="src/ico_instagram.png" style="width:50px"></a>
+        <a target="_blank" href="https://www.linkedin.com/in/justinjojas/" style="padding: 0em 1em;"><img src="src/ico_linkedin.png"style="width:50px"></a>
+      </div>
+    </div>
+    </div>
+</div>
+</div>
+</footer>
 </body>
 </html>
