@@ -8,241 +8,244 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <link rel="shortcut icon" href="src/favicon/favicon.ico">
-	<link rel="icon" sizes="16x16 32x32 64x64" href="src/favicon/favicon.ico">
-	<link rel="icon" type="image/png" sizes="196x196" href="src/favicon/favicon-192.png">
-	<link rel="icon" type="image/png" sizes="160x160" href="src/favicon/favicon-160.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="src/favicon/favicon-96.png">
-	<link rel="icon" type="image/png" sizes="64x64" href="src/favicon/favicon-64.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="src/favicon/favicon-32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="src/favicon/favicon-16.png">
-	<link rel="apple-touch-icon" href="src/favicon/favicon-57.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="src/favicon/favicon-114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="src/favicon/favicon-72.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="src/favicon/favicon-144.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="src/favicon/favicon-60.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="src/favicon/favicon-120.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="src/favicon/favicon-76.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="src/favicon/favicon-152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="src/favicon/favicon-180.png">
   <style>
-  #button{
-    font-weight: bold;
-    color: #1e4a87;
-    padding: 6px 24px 6px 24px;
-  }
-  #button:hover{
-        transition: background-color .3s linear;
-        background-color:#e6e6e6;
-  }
-  .konten{
-      color:white;
-      text-shadow: 2px 2px 8px #000000;
-  }
-  .tab{
-      text-indent: 2em;
-  }
-  .background{
-    background-image:url('src/pop.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  @media only screen and (max-device-width: 1366px) {
-  .background {
-    background-attachment: scroll;
-  }
-}
-  .media{
-    background-color: white;
-  }
-  .btn-tec,
-  .btn-tec:hover,
-  .btn-tec:active,
-  .btn-tec:visited,
-  .btn-tec:focus {
-    background-color: #1e4a87;
-    border-color:#1e4a87;
-  }
-  .btn-ig,
-  .btn-ig:hover,
-  .btn-ig:active,
-  .btn-ig:visited,
-  .btn-ig:focus{
-    background-color:#833AB4;
-    border-color:#833AB4;
-  }
-  .btn-ln,
-  .btn-ln:hover,
-  .btn-ln:active,
-  .btn-ln:visited,
-  .btn-ln:focus {
-    background-color: #22ba4f;
-    border-color:#22ba4f;
-  }
-  .btn-md,
-  .btn-md:hover,
-  .btn-md:active,
-  .btn-md:visited,
-  .btn-md:focus {
-    background-color:black;
-    border-color:black;
-  }
-  .btn-sp,
-  .btn-sp:hover,
-  .btn-sp:active,
-  .btn-sp:visited,
-  .btn-sp:focus {
-    background-color:#1ed760;
-    border-color:#1ed760;
-  }
-  .btn-ld,
-  .btn-ld:hover,
-  .btn-ld:active,
-  .btn-ld:visited,
-  .btn-ld:focus {
-    background-color:#0073b1;
-    border-color:#0073b1;
-  }
-  html {
+    html {
           scroll-behavior: smooth;
         }
-  .content-blue {
-    width:50em;
-    font-size: 18px;
-    color:white;
+    .background{
+            background-image:url('src/pop.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
   }
-  .content-white {
-    width:50em;
-    font-size: 18px;
-    color:#1e4a87;
-  }
-  .box-project{
-    padding-top: 1em;
-    width:20em;
-  }
-  .project-shadow{
-    padding-bottom: .5em;
-  }
-  .project-shadow:hover {
-    border-color:white;
-    border-style: solid;
-    border-radius: 16px;
-    box-shadow: 2px 3px 19px 1px rgba(0,0,0,0.2);
+    .home-container{
+        background-color: #0073b1;
+        opacity: .95;
+    }
+    .home-container-white{
+      background-image:url('src/background-about.png');
+      background-attachment: scroll;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity:.9;
+    }
+
+    .home-text-main{
+        font-weight: bold;    
+    }
+    .careo{
+        padding: .5em 0em .5em 0em;
+        font-size:1.5em;
+    }
+    .careo-border{
+        margin: .5em;
+        padding-bottom: 2em;
+        text-align: center;
+        background-color:#f6f7f7;
+        border-color:#f6f7f7;
+        border-style: solid;
+        border-radius: 8px;
+        box-shadow: 2px 3px 19px 1px rgba(0,0,0,0.2);
+    }
+    .home-text-submain{
+        font-size: 1.5em;
+        font-weight: lighter;
+        color: lightgray;
+    }
+    .home-textbox{
+        padding: 20em 0em 20em 7em;
+    }
+    .about-textbox{
+        padding: 5em 0em 20em 5em;
+    }
+    .careo-textbox{
+        padding: 5em 3em 20em 3em;
+    }
+    .about-description-box{
+        padding: 5em;
+    }
+    @media only screen and (max-device-width: 1366px) {
+      #mobile-compact{
+        padding-left: 0em;
+      }
+    }
+    .nav-tec{
+        font-size: 1.2em;
+    }
+    .nav-tec-box{
+      background-color:#0073b1;
+      padding-left: 5em;
+      padding-right: 5em;
+    }
+    #tec-color{
+      color:#1e4a87;
+    }
+    #logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
   </style>
 </head>
-<body>
-  <img style="margin-left:1.2em;height:8em;" class="d-none d-lg-block float-left sticky-top" src="src/banner.png">
-<nav class="navbar navbar-expand-sm navbar-dark justify-content-end">
-  <button class="navbar-toggler btn-tec justify-content-end" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" id="button" href="#About">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="button" href="#Project">Project</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="button" href="#Media">Media</a>
-      </li>    
-    </ul>
-  </div>  
-</nav>
-<div class="container-fluid background" style="margin-top:.2em;padding-bottom: 20em;padding-top:20em">
-    <div class="col" style="padding-top: 4em;">
-      <h2 class="konten text-center" style="font-size:56px;">Techno Entrepreneur Club ITB</h2>
-      <h5 class="konten text-center " style="font-size:28px;"><i>Since 2004</i></h5>
-      <div class="text-center">
-        <br><br><br><br>
-        <a type="button" class="btn btn-primary btn-lg btn-tec" href="#About">What is TEC?</a>
-        <br><br><br><br>
-      </div>
-      <br>
-    </div>
-  </div>
-</div>
-<div class="media container-fluid" style="background-color:#1e4a87;color:white;padding-top:4em;padding-bottom:4em">
-  <div class="col" style="padding-top:1.5em;" id="About">
-    <h2 class="text-center">About</h2>
-    <br><br>
-      <div class="col d-flex justify-content-center text-center">
-        <p class="content-blue text-wrap">Techno Entrepreneur Club ITB adalah sebuah unit kegiatan mahasiswa di Institut Teknologi Bandung yang menghimpun mahasiswa dengan minat <b>kewirausahaan</b>. TEC sebagai unit kegiatan mahasiswa berasaskan musyawarah dan kekeluargaan dengan tujunnya yaitu <b>Global, Enrich </b>dan<b> Hight Impact.</b> Hingga saat ini anggota aktif TEC berjumlah 270 orang yang terdiri dari mahasiswa TPB hingga tingkat akhir. Dies Natalis TEC sendiri diperingati tiap tanggal 28 Februari. </p>
-        </div>
-        <br><br><br><br>
-    </div>
-  </div>
-<br>
-</div>
-<div class="media container-fluid" style="color:#1e4a87;background-color:white">
-  <div class="col" style="padding-top:1.5em;padding-bottom:1.5em" id="Project">
-    <h2 class="text-center">Our Project</h2>
-    <br><br>
-      <div class="col d-flex justify-content-center text-center">
-        <div class="container">
-          <div class="row">
-            <div class="col project-shadow " >
-              <h3 style="padding-top:.2em;padding-bottom: .5em;">TECFEST 2020</h3>
-              <img src="src/tecfest.png" alt="TECFEST" class="img-thumbnail" style="width:400px">
-              <div class="col d-flex justify-content-center text-center">
-                <p class="box-project content-white text-wrap">TECFEST adalah rangkaian kegiatan yang terdiri dari seminar dan lomba bisnis yang diadakan oleh TEC ITB tiap tahunnya. TECFEST 2020 mengangkat tema "Peran Technopreneur dalam Menciptakan Inovasi Pemutar Roda Ekonomi Kreatif Indonesia".</p>
-                <br>
+<body class="background">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark nav-tec-box" id="mobile-compact">
+        <a class="navbar-brand" href="#">
+            <img src="src/logo.png" width="60" class="d-inline-block align-top" alt="">
+          </a>
+        <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link nav-tec" style="color:white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-tec" style="color:white" href="#About">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-tec dropdown-toggle" style="color:white" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Careosentris
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#Careokarsa">Careokarsa</a>
+                <a class="dropdown-item" href="#Careocita">Careocita</a>
+                <a class="dropdown-item" href="#Careocipta">Careocipta</a>
+                <a class="dropdown-item" href="#Careokarya">Careokarya</a>
               </div>
-              <a type="button" class="btn btn-primary btn-lg btn-ig" target="_blank" href="https://www.instagram.com/tecfest_id/">Tecfest Instagram</a>
-              <a type="button" class="btn btn-primary btn-lg btn-tec" target="_blank" href="https://bit.ly/TECFESTGuidelines">Competition Guideline</a>
-            </div>
-            <div class="col project-shadow">
-            <h3 style="padding-top:.2em;padding-bottom: .5em;">TEC Internship</h3>
-              <img src="src/intern.png" alt="TEC Internship" class="img-thumbnail" style="width:400px">
-              <div class="col d-flex justify-content-center text-center">
-                <p class="box-project content-white text-wrap">TEC Internship adalah proses kaderisasi yang dijalani oleh massa ITB sebelum menjadi anggota resmi TEC. TEC Internship menjadi sarana awal anggota mendapat ilmu bisnis. Proses TEC Internship terdiri dari Business Class, Business Challenge dan Nightinternship. </p>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-tec dropdown-toggle" style="color:white" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Media
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="">Instagram</a>
+                <a class="dropdown-item" href="">Line OA</a>
+                <a class="dropdown-item" href="">Spotify</a>
+                <a class="dropdown-item" href="">Medium</a>
               </div>
-              <a type="button" class="btn btn-primary btn-lg btn-ig" href="#">Internship Instagram</a>
-            </div>
-          </div>
-      </div>
-    </div>
-  </div>
-<br>
-</div>
-<div class="media container-fluid" style="background-color:#1e4a87;color:white;padding-top: 3em;padding-bottom: 3em;">
-  <div class="col" style="padding-top:1.5em;" id="Media">
-    <h2 class="text-center">Media</h2>
-    <br><br>
-      <div class="col text-center">
-        <div class="d-flex justify-content-center">
-          <p class="text-wrap content-blue">Untuk melihat dan mendapatkan konten terbaru dari TEC ITB, ikuti kami di:</p>
-       </div>
-        <a type="button" class="btn btn-primary btn-ig btn-lg" href="http://instagram.com/tec.itb" target="_blank">Instagram</a>
-        <a type="button" class="btn btn-primary btn-ln btn-lg" href="https://line.me/R/ti/p/@bic2916s" target="_blank">Line OA</a>
-        <a type="button" class="btn btn-primary btn-sp btn-lg" href="#" target="_blank">Spotify</a>
-        <a type="button" class="btn btn-primary btn-md btn-lg" href="https://medium.com/@tec_itb" target="_blank">Medium</a>
-        <br><br>
-      </div>
-    </div>
-  </div>
-</div>
-<footer style="padding:2em 2em 2em 2em">
-  <div class="col d-flex justify-content-center text-center">
-    <div style="container">
-      <div class="row">
-        <!-- <div class="col">
-        </div> -->
-        <div class="col" style="width:400px">
-          <img src="src/TEC_Banner_Screen_White.png" style="width:200px">
-          <hr/>
-          <div class="d-flex justify-content-center">
-            <p class="content-white text-wrap" style="width:15em">Basement Campus Center Barat, Institut Teknologi Bandung, Bandung, Jawa Barat</p>
-          </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-tec" style="color:white" href="http://bit.ly/kalender_tecitb" target="_blank">Calendar</a>
+              </li>
+          </ul>
         </div>
-      </div>
+      </nav>
+    <div class="container-fluid home-container">
+        <div class="home-textbox" id="mobile-compact">
+            <h1 class="home-text-main" style="color:white">Lorem ipsum dolor sit amet,</h1>
+            <h1 class="home-text-main" style="color:white">consectetur adispiscing elit.</h1>
+            <h1 class="home-text-main" style="color:orange">Apakah kamu siap menjadi bagian dari TEC ITB?</h1>
+            <br>
+            <h2 class="home-text-submain" style="color:white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
+            <h2 class="home-text-submain" style="color:white">Fusce justo augue, blandit sed nisi eget, vehicula tincidunt urna.</h2>
+            <br><a type="button" class="btn btn-light btn-lg" href="#about" style="border-radius: 32px;padding: .5em 4em .5em 4em" id="tec-color">Learn more</a>
+        </div>
     </div>
-</div>
-</footer>
-
+    <div class="container-fluid home-container-white" id="about">
+        <div class="about-textbox" id="mobile-compact">
+            <h1 class="text-center" id="tec-color">About Us</h1>
+            <h1 class="text-center" id="tec-color" style="font-size: 1.6em;margin-top:.9em">Global • Enrich • High Impact</h1>
+            <div class="container about-description-box" id="mobile-compact">
+                  <div class="col text-left text-wrap">
+                    <p style="padding-top: 5em;font-size: 1.2em">Techno Entrepreneur Club ITB adalah sebuah unit kegiatan mahasiswa di Institut Teknologi Bandung yang menghimpun mahasiswa dengan minat kewirausahaan. TEC sebagai unit kegiatan mahasiswa berasaskan musyawarah dan kekeluargaan dengan tujunnya yaitu Global, Enrich dan Hight Impact. Hingga saat ini anggota aktif TEC berjumlah 270 orang yang terdiri dari mahasiswa TPB hingga tingkat akhir. Dies Natalis TEC sendiri diperingati tiap tanggal 28 Februari.</p>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid home-container">
+        <div class="careo-textbox">
+            <h1 class="home-text-main text-center" style="color:white">Careosentris</h1>
+            <div class="container d-flex justify-content-center">
+            <div class="col text-center text-wrap" style="max-width:50em;margin-top: 2em;color:white">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce justo augue, blandit sed nisi eget, vehicula tincidunt urna. In porta tincidunt justo, ac ultricies metus ornare ac. Nullam posuere at turpis id tincidunt. Duis velit magna, malesuada non laoreet eget, viverra eget purus. Phasellus eget rutrum est. Quisque tellus urna, ornare eget dolor a, vehicula ultricies eros. Integer aliquam elementum nisi vel volutpat. Cras at mauris pharetra, tristique lorem vitae, interdum ligula. Donec ut pellentesque dui.</p>
+              </div>
+            </div>   
+                <div class="row" style="margin-top:2em;">
+                    <div class="col careo-border">
+                        <h1 class='home-text-main careo' id="Careokarsa">Careokarsa</h1>
+                        <img src="src/sekjen-0.png" alt="Kesekjenan" style="width:80%">
+                        <div class="col text-center text-wrap" style="padding-top: .5em;">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce justo augue, blandit sed nisi eget, vehicula tincidunt urna. In porta tincidunt justo, ac ultricies metus ornare ac. Nullam posuere at turpis id tincidunt. Duis velit magna, malesuada non laoreet eget, viverra eget purus. Phasellus eget rutrum est. Quisque tellus urna, ornare eget dolor a, vehicula ultricies eros. Integer aliquam elementum nisi vel volutpat. Cras at mauris pharetra, tristique lorem vitae, interdum ligula. Donec ut pellentesque dui.</p>
+                        </div>
+                        <a type="button" class="btn btn-info btn-lg" href="">SKPI</a>
+                        <a type="button" class="btn btn-info btn-lg" href="">SKAO</a>
+                    </div>
+                    <div class="col careo-border">
+                        <h1 class='home-text-main careo' id="Careocita">Careocita</h1>
+                        <img src="src/internal-0.png" alt="Internal" style="width:80%">
+                        <div class="col text-center text-wrap" style="padding-top: .5em;">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce justo augue, blandit sed nisi eget, vehicula tincidunt urna. In porta tincidunt justo, ac ultricies metus ornare ac. Nullam posuere at turpis id tincidunt. Duis velit magna, malesuada non laoreet eget, viverra eget purus. Phasellus eget rutrum est. Quisque tellus urna, ornare eget dolor a, vehicula ultricies eros. Integer aliquam elementum nisi vel volutpat. Cras at mauris pharetra, tristique lorem vitae, interdum ligula. Donec ut pellentesque dui.</p>
+                          </div>
+                        <a type="button" class="btn btn-info btn-lg" href="">Data Anggota</a>
+                    </div>
+                    <div class="col careo-border">
+                        <h1 class='home-text-main careo ' id="Careocipta">Careocipta</h1>
+                        <img src="src/bisnis-0.png" alt="bisnis" style="width:80%">
+                        <div class="col text-center text-wrap" style="padding-top: .5em;">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce justo augue, blandit sed nisi eget, vehicula tincidunt urna. In porta tincidunt justo, ac ultricies metus ornare ac. Nullam posuere at turpis id tincidunt. Duis velit magna, malesuada non laoreet eget, viverra eget purus. Phasellus eget rutrum est. Quisque tellus urna, ornare eget dolor a, vehicula ultricies eros. Integer aliquam elementum nisi vel volutpat. Cras at mauris pharetra, tristique lorem vitae, interdum ligula. Donec ut pellentesque dui.</p>
+                          </div>
+                        <a type="button" class="btn btn-info btn-lg" href="">Lorem</a>
+                        <a type="button" class="btn btn-info btn-lg" href="">Lorem</a>
+                    </div>
+                    <div class="col careo-border">
+                        <h1 class='home-text-main careo' id="Careokarya">Careokarya</h1>
+                        <img src="src/media-0.png" alt="Media" style="width:80%">
+                        <div class="col text-center text-wrap" style="padding-top: .5em;">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce justo augue, blandit sed nisi eget, vehicula tincidunt urna. In porta tincidunt justo, ac ultricies metus ornare ac. Nullam posuere at turpis id tincidunt. Duis velit magna, malesuada non laoreet eget, viverra eget purus. Phasellus eget rutrum est. Quisque tellus urna, ornare eget dolor a, vehicula ultricies eros. Integer aliquam elementum nisi vel volutpat. Cras at mauris pharetra, tristique lorem vitae, interdum ligula. Donec ut pellentesque dui.</p>
+                          </div>
+                        <a type="button" class="btn btn-info btn-lg" href="">Dokumentasi Acara</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="container-fluid home-container">
+            <div class="careo-textbox">
+                <h1 class="home-text-main text-center" style="color:white">Our Project</h1>
+                <div class="container d-flex justify-content-center">
+                <div class="col text-center text-wrap" style="max-width:50em;margin-top: 2em;color:white">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce justo augue, blandit sed nisi eget, vehicula tincidunt urna. In porta tincidunt justo, ac ultricies metus ornare ac. Nullam posuere at turpis id tincidunt. Duis velit magna, malesuada non laoreet eget, viverra eget purus. Phasellus eget rutrum est. Quisque tellus urna, ornare eget dolor a, vehicula ultricies eros. Integer aliquam elementum nisi vel volutpat. Cras at mauris pharetra, tristique lorem vitae, interdum ligula. Donec ut pellentesque dui.</p>
+                  </div>
+                </div>   
+                    <div class="row" style="margin-top:2em;">
+                        <div class="col careo-border">
+                            <h1 class='home-text-main ' id="careo">TECFEST 2020</h1>
+                            <img src="src/tecfest.png" alt="TEC Internship" class="img-thumbnail" style="width:400px">
+                            <div class="col text-center text-wrap" style="padding-top: .5em">
+                                <p>TECFEST adalah rangkaian kegiatan yang terdiri dari seminar dan lomba bisnis yang diadakan oleh TEC ITB tiap tahunnya. TECFEST 2020 mengangkat tema "Peran Technopreneur dalam Menciptakan Inovasi Pemutar Roda Ekonomi Kreatif Indonesia".</p>
+                            </div>
+                            <a type="button" class="btn btn-info btn-lg" href="" style="margin-top: .5em;">TECFEST Guidelines</a>
+                            <a type="button" class="btn btn-info btn-lg" href="" style="margin-top: .5em;">TECFEST Instagram</a>
+                        </div>
+                        <div class="col careo-border">
+                            <h1 class='home-text-main' id="careo">TEC Internship</h1>
+                            <img src="src/intern.png" alt="TEC Internship" class="img-thumbnail" style="width:400px">
+                            <div class="col text-center text-wrap" style="padding-top: .5em;">
+                                <p>TEC Internship adalah proses kaderisasi yang dijalani oleh mahasiswa ITB sebelum menjadi anggota resmi TEC ITB. TEC Internship menjadi langkah awal calon anggota memperoleh keilmuan bisnis di TEC ITB. Proses TEC Internship terdiri dari Business Class, Business Challenge dan Nightinternship.</p>
+                              </div>
+                            <a type="button" class="btn btn-info btn-lg" href="">Daftar</a>
+                        </div>
+                    </div>
+                </div>
+          </div>
 </body>
-</html>
+<footer style="padding:2em 2em 2em 2em;background-color: white;">
+    <div class="col d-flex justify-content-center text-center">
+      <div style="container">
+        <div class="row">
+          <!-- <div class="col">
+          </div> -->
+          <div class="col" style="width:400px">
+            <img src="src/TEC_Banner_Screen_White.png" style="width:200px">
+            <hr/>
+            <div class="d-flex justify-content-center">
+              <p class="content-white text-wrap" style="width:15em">Basement Campus Center Barat, Institut Teknologi Bandung, Bandung, Jawa Barat</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </footer>
