@@ -67,7 +67,7 @@
     .about-description-box{
         padding: 5em;
     }
-    @media only screen and (max-device-width: 1366px) {
+    @media only screen and (max-device-width: 1080px) {
       #mobile-compact{
         padding-left: 0em;
       }
@@ -89,13 +89,15 @@
     margin-right: auto;
     width: 100%;
   }
+    .media-footer-padding{
+      padding:.5em .5em 0em .5em;
+    }
 
-  .media-footer-padding{
-    padding-left: .5rem;
-    padding-right: .5rem;
-  }
     #Careocita,#Careokarsa,#Careocipta,#Careokarya{
       color:#f09f36;
+    }
+    .social-icon{
+      width:30px;
     }
   </style>
 </head>
@@ -131,10 +133,10 @@
                 Media
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="">Instagram</a>
-                <a class="dropdown-item" href="">Line OA</a>
+                <a class="dropdown-item" href="https://instagram.com/tec.itb" target="_blank">Instagram</a>
+                <a class="dropdown-item" href="https://lin.ee/2J11HHAGV" target="_blank">Line OA</a>
                 <a class="dropdown-item" href="">Spotify</a>
-                <a class="dropdown-item" href="">Medium</a>
+                <a class="dropdown-item" href="https://medium.com/@tec_itb" target="_blank">Medium</a>
               </div>
             </li>
             <li class="nav-item">
@@ -243,19 +245,21 @@
                 </div>
     </div>
 </body>
-<footer style="padding:1em 1em 1em 1em;background-color: white;">
-  <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid"> 
-    <div>
-      <img src="src/favicon/favicon-32.png">
+<footer">
+  <div class="container-fluid" style="background-color:white;padding: 1em;"> 
+    <div class="row justify-content-center">
+    <div class="col">
+      <img src="src/logo-.png" width="40px">
     </div>
-    <div style="display: flex;justify-content: center;">
-      <p>Basement CC Barat, Institut Teknologi Bandung</p>
+    <div class="col text-center text-wrap">
+      <p>Website ini dikembangkan oleh <b> Kementerian Careokarya</b> TEC ITB</p>
     </div>
-    <div style="display: flex;justify-content: flex-end;align-items: baseline;">
-      <a class ="media-footer-padding" href="https://placeholder.com"><img src="https://via.placeholder.com/30"></a>
-      <a class ="media-footer-padding" href="https://placeholder.com"><img src="https://via.placeholder.com/30"></a>
-      <a class ="media-footer-padding" href="https://placeholder.com"><img src="https://via.placeholder.com/30"></a>
-      <a class ="media-footer-padding" href="https://placeholder.com"><img src="https://via.placeholder.com/30"></a>
+    <div class="col text-center">
+      <a class ="media-footer-padding" href="https://instagram.com/tec.itb" target="_blank"><img src="src/instagram-ico.png" class="social-icon" title="Instagram"></a>
+      <a class ="media-footer-padding" href="https://lin.ee/2J11HHAGV" target="_blank"><img src="src/line-ico.png" class="social-icon" title="Line OA"></a>
+      <a class ="media-footer-padding"><img src="src/spotify-ico.png" class="social-icon" title="Coming Soon"></a>
+      <a class ="media-footer-padding" href="https://medium.com/@tec_itb" target="_blank"><img src="src/medium-ico.png" class="social-icon" title="Medium"></a>
     </div>
+  </div>
   </div>
 </footer>
