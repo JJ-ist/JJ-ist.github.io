@@ -9,127 +9,165 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <style>
-    html {
-          scroll-behavior: smooth;
-          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      html{
+            scroll-behavior: smooth;
+            font-family: Arial, Helvetica, sans-serif;
         }
-    .background{
-            background-image:url('src/pop.jpg');
+      .navbar-tec {
+            background-color: white;
+            padding: 1em 20em 1em 20em;
+        }
+        /* change the brand and text color */
+        .navbar-tec .navbar-brand,
+        .navbar-tec .navbar-text {
+            color: gray;
+        }
+        /* change the link color */
+        .navbar-tec .navbar-nav .nav-link {
+            color:black;
+            font-weight: 600;
+        }
+        .navbar-tec .navbar-nav .nav-item{
+            margin:0em 1em 0em 1em;
+        }
+        /* change the color of active or hovered links */
+        .navbar-tec .nav-item.active .nav-link,
+        .navbar-tec .nav-item:hover .nav-link {
+            color: #1e4a87;
+        }
+        @media only screen and (max-width: 768px){
+            #mobile-box-pattern{            
+                background-repeat: no-repeat;
+                padding: 1em 0em 3em 0em;
+            }
+            #mobile-compact{
+                padding: 0em;
+            }
+            #mobile-compact-description{
+                padding: 2em 0em 4em 0em;
+            }
+            #mobile-compact-about{
+                padding-left: 2em;
+                padding-right: 2em;
+            }
+            #logo-tec-footer{
+                width: 100px;
+        }
+            .navbar-tec{
+                padding: 1em 2em 1em 2em;
+            }
+        }
+        .home-container{
+            background-image:url('src/city-background.png');
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-  }
-    .home-container{
-        background-color: #0073b1;
-        opacity: .95;
-    }
-    .home-container-white{
-      background-image:url('src/background-about.png');
-      background-attachment: scroll;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      opacity:.9;
-    }
-
-    .home-text-main{
+            opacity:.9;
+        }
+        .home-textbox{
+        padding: 20em 0em 20em 10em;
+        }
+        .nav-tec-daftar{
+            border-color:gray; border-style: solid; border-radius: 6px;padding:0em 1em 0em 1em
+        }
+        .nav-tec-daftar:hover{
+            border-color:#0073b1;
+        }
+        .home-text-main{
         font-weight: bold;    
-    }
-    .careo{
-        padding: .5em 0em .5em 0em;
-        font-size:1.5em;
-    }
-    .careo-border{
-        margin: .5em;
-        padding-bottom: 2em;
-        text-align: center;
-        background-color:#f6f7f7;
-        border-color:#f6f7f7;
-        border-style: solid;
-        border-radius: 8px;
-        box-shadow: 2px 3px 19px 1px rgba(0,0,0,0.2);
-    }
-    .home-text-submain{
-        font-size: 1.5em;
-        font-weight: lighter;
-        color: lightgray;
-    }
-    .home-textbox{
-        padding: 20em 0em 20em 7em;
-    }
-    .about-textbox{
-        padding: 5em 0em 10em 5em;
-    }
-    .careo-textbox{
-        padding: 5em 3em 5em 3em;
-    }
-    .about-description-box{
-        padding: 5em;
-    }
-    @media only screen and (max-device-width: 1080px) {
-      #mobile-compact{
-        padding-left: 0em;
-      }
-    }
-    .nav-tec{
-        font-size: 1.2em;
-    }
-    .nav-tec-box{
-      background-color:#0073b1;
-      padding-left: 5em;
-      padding-right: 5em;
-    }
-    #tec-color{
-      color:#1e4a87;
-    }
-    #logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-  }
-    .media-footer-padding{
-      padding:.5em .5em 0em .5em;
-    }
-
-    #Careocita,#Careokarsa,#Careocipta,#Careokarya{
-      color:#f09f36;
-    }
-    .social-icon{
-      width:30px;
-    }
+        }
+        .home-text-submain{
+            font-size: 1.5em;
+            font-weight: lighter;
+            color: lightgray;
+        }
+        .about-box{
+            background-color: white;
+            padding: 4em 10em 4em 10em;
+        }
+        .about-title{
+            font-weight: bold;
+            color:#1e4a87;
+        }
+        .about-parag{
+            padding-top:1em;
+            color:black;
+            font-size:large;
+        }
+        .col-motto{
+            padding:2em;
+            justify-content: center;
+            text-align: center;
+            background-color: #1e4a87;
+        }
+        #middle-motto{
+            background-color:#295ca3;
+        }
+        .careo-box{
+            padding: 5em 5em 2em 5em;
+        }
+        .careo-box-pattern{
+            background-color: #f5f5f5;
+            padding: 5em 5em 2em 5em;
+            background-image:url('src/pattern-background.png');
+            background-attachment: scroll;
+            background-position: center;
+            background-repeat: repeat-y;
+            background-size: 70%;
+        }
+        .careo-title{
+            font-weight: bold;
+            color:#1e4a87;
+        }
+        .careo-parag{
+            padding-top: 1em;
+            color:black;
+            font-size:large;
+        }
+        .careo{
+            padding: .5em 0em .5em 0em;
+            font-size:1.5em;
+        }
+        .careo-border{
+            margin: .5em;
+            padding-bottom: 2em;
+            text-align: center;
+            background-color:#f6f7f7;
+            border-color:#f6f7f7;
+            border-style: solid;
+            border-radius: 8px;
+            box-shadow: 2px 3px 19px 1px rgba(0,0,0,0.2);
+        }   
+            .media-footer-padding{
+        padding:.5em .5em 0em .5em;
+        }
+        .social-icon{
+        width:30px;
+        }
+        #logo-tec-footer{
+            width: 40px;
+        }
   </style>
 </head>
-<body class="background">
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark nav-tec-box" id="mobile-compact">
+<body>
+    <nav class="navbar navbar-expand-sm navbar-tec navbar-light">
         <a class="navbar-brand" href="#">
-            <img src="src/logo.png" width="60" class="d-inline-block align-top" alt="">
-          </a>
+            <img src="src/logo-.png" width="60" class="d-inline-block align-top" alt="">
+        </a>
         <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link nav-tec" style="color:white" href="#">Home</a>
+              <a class="nav-link" href="#About">Tentang</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-tec" style="color:white" href="#About">About</a>
+              <a class="nav-link" href="#Careosentris" >Careosentris</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link nav-tec dropdown-toggle" style="color:white" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Careosentris
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#Careokarsa">Careokarsa</a>
-                <a class="dropdown-item" href="#Careocita">Careocita</a>
-                <a class="dropdown-item" href="#Careocipta">Careocipta</a>
-                <a class="dropdown-item" href="#Careokarya">Careokarya</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link nav-tec dropdown-toggle" style="color:white" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link  dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Media
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -139,51 +177,57 @@
                 <a class="dropdown-item" href="https://medium.com/@tec_itb" target="_blank">Medium</a>
               </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link nav-tec" style="color:white" href="http://bit.ly/kalender_tecitb" target="_blank">Calendar</a>
-              </li>
           </ul>
         </div>
+        <div class="justify-content-end">
+            <ul class="navbar-nav">
+                <li class="nav-item nav-tec-daftar">
+                    <a class="nav-link"  href="#Daftar">Daftar</a>
+                  </li>
+        </div>
       </nav>
-    <div class="container-fluid home-container">
-        <div class="home-textbox" id="mobile-compact">
-            <h1 class="home-text-main" style="color:white">Lorem ipsum dolor sit amet,</h1>
-            <h1 class="home-text-main" style="color:white">consectetur adispiscing elit.</h1>
+      <div class="container-fluid home-container">
+        <div class="home-textbox" id="mobile-compact-description">
+            <h1 class="home-text-main" style="color:black">Lorem ipsum dolor sit amet,</h1>
+            <h1 class="home-text-main" style="color:black">consectetur adispiscing elit.</h1>
             <h1 class="home-text-main" style="color:orange">Apakah kamu siap menjadi bagian dari TEC ITB?</h1>
             <br>
-            <h2 class="home-text-submain" style="color:white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
-            <h2 class="home-text-submain" style="color:white">Fusce justo augue, blandit sed nisi eget, vehicula tincidunt urna.</h2>
-            <br><a type="button" class="btn btn-light btn-lg" href="#about" style="border-radius: 32px;padding: .5em 4em .5em 4em" id="tec-color">Learn more</a>
+            <h2 class="home-text-submain" style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
+            <h2 class="home-text-submain" style="color:black">Fusce justo augue, blandit sed nisi eget, vehicula tincidunt urna.</h2>
+            <br><a type="button" class="btn btn-light btn-lg" href="#About" style="border-radius: 8px;padding: .5em 4em .5em 4em;background-color:#1e4a87;color:white">Learn more</a>
         </div>
     </div>
-    <div class="container-fluid home-container-white" id="about">
-        <div class="about-textbox" id="mobile-compact">
-            <h1 class="text-center" id="tec-color">About Us</h1>
-            <h1 class="text-center" id="tec-color" style="font-size: 1.6em;margin-top:.9em">Global • Enrich • High Impact</h1>
-            <div class="container about-description-box" id="mobile-compact">
-              <p style="font-size:1.5em" id="tec-color">Techno Entrepreneur Club ITB merupakan unit yang menghimpun mahasiswa ITB yang memiliki minat <b>kewirausahaan</b>. Didirikan pada tahun 2009 TEC ITB menghimpun mahasiswa ITB untuk belajar dan mengembangkan bisnis masing-masing sejak masa perkuliahan. <br><br><b>Global, Enrich, dan High Impact</b> merupakan motto dari TEC ITB. Dari motto tersebut TEC ITB bertujuan untuk menciptakan calon pengusaha dengan ilmu bisnis yang luas demi membentuk pengusaha yang mampu bersaing  dalam tingkat global dan membawa pengaruh besar bagi lingkungan sekitarnya. TEC ITB memiliki berbagai jenis kegiatan untuk mengembangkan keilmuan bisnis anggotanya. Beberapa kegiatan tersebut diantaranya, TEC Internship, Seminar Bisnis, dan masih banyak lagi. Hingga saat ini anggota aktif TEC berjumlah 270 orang yang terdiri dari mahasiswa TPB hingga tingkat akhir.</p>
-                  </div>
-            </div>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col col-motto justify-content-center">
+            <img src="src/global-ico.png" width="100px">
+            <h3 style="color: white; padding-top: 1em;">Global</h3>
+          </div>
+          <div class="col col-motto justify-content-center" id="middle-motto">
+            <img src="src/enrich-ico.png" width="100px">
+            <h3 style="color: white; padding-top: 1em;">Enrich</h3>
+          </div>
+          <div class="col col-motto justify-content-center">
+            <img src="src/highimpact-ico.png" width="100px">
+            <h3 style="color: white; padding-top: 1em;">High Impact</h3>
+          </div>
+        </div>
+      </div>
+    <div class="container-fluid about-box d-flex justify-content-center" id="mobile-compact-about">
+        <div  style="max-width: 40em;" id="About">
+            <h1 class="about-title text-center">TEC ITB</h1>
+            <p class="about-parag"><b>Techno Entrepreneur Club ITB</b> merupakan unit yang menghimpun mahasiswa ITB yang memiliki minat <b>kewirausahaan</b>. Didirikan pada tahun 2009 TEC ITB menghimpun mahasiswa ITB untuk belajar dan mengembangkan bisnis masing-masing sejak masa perkuliahan.<br><br><b>Global, Enrich, dan High Impact</b> merupakan motto dari TEC ITB. Dari motto tersebut TEC ITB bertujuan untuk menciptakan calon pengusaha dengan ilmu bisnis yang luas demi membentuk pengusaha yang mampu bersaing  dalam tingkat global dan membawa pengaruh besar bagi lingkungan sekitarnya. TEC ITB memiliki berbagai jenis kegiatan untuk mengembangkan keilmuan bisnis anggotanya. Beberapa kegiatan tersebut diantaranya, TEC Internship, Seminar Bisnis, dan masih banyak lagi. Hingga saat ini anggota aktif TEC berjumlah 270 orang yang terdiri dari mahasiswa TPB hingga tingkat akhir. </p>
         </div>
     </div>
-    <div class="container-fluid home-container" id="mobile-compact" >
-        <div class="careo-textbox">
-            <h1 class="home-text-main text-center" style="color:#f09f36;font-size:3em">Careosentris</h1>
-            <div class="d-flex justify-content-center" id="image-container">
-              <img src="src/logo-careo.png" width="15%">
+    <div class="careo-box-pattern" id="mobile-box-pattern">
+        <div class="container-fluid careo-box d-flex justify-content-center" id="mobile-compact-about">
+            <div  style="max-width: 40em;" id="Careosentris">
+                <h1 class="careo-title text-center">Badan Pengurus TEC ITB</h1>
+                <h1 class="careo-title text-center" style="font-size:large;color:orange">Kabinet Careosentris TEC ITB 2020/2021</h1>
+                <p class="careo-parag"><b>Techno Entrepreneur Club ITB</b> merupakan unit yang menghimpun mahasiswa ITB yang memiliki minat <b>kewirausahaan</b>. Didirikan pada tahun 2009 TEC ITB menghimpun mahasiswa ITB untuk belajar dan mengembangkan bisnis masing-masing sejak masa perkuliahan.<br><br><b>Global, Enrich, dan High Impact</b> merupakan motto dari TEC ITB. Dari motto tersebut TEC ITB bertujuan untuk menciptakan calon pengusaha dengan ilmu bisnis yang luas demi membentuk pengusaha yang mampu bersaing  dalam tingkat global dan membawa pengaruh besar bagi lingkungan sekitarnya. TEC ITB memiliki berbagai jenis kegiatan untuk mengembangkan keilmuan bisnis anggotanya. Beberapa kegiatan tersebut diantaranya, TEC Internship, Seminar Bisnis, dan masih banyak lagi. Hingga saat ini anggota aktif TEC berjumlah 270 orang yang terdiri dari mahasiswa TPB hingga tingkat akhir. </p>
             </div>
-            <div class="container d-flex justify-content-center">
-            <div class="col text-center text-wrap" style="max-width:50em;margin-top: 2em;color:white">
-                <p>Careosentris adalah Badan Pengurus TEC ITB 2020/2021 yang diketuai oleh <b>Redho Aldi Akmal Nugroho</b> (Kewirausahaan 2020). Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce justo augue, blandit sed nisi eget, vehicula tincidunt urna. In porta tincidunt justo, ac ultricies metus ornare ac. Nullam posuere at turpis id tincidunt. Duis velit magna, malesuada non laoreet eget, viverra eget purus. </p>
-                <h1 class="home-text-main text-center" style="color:white;padding-top:1em">Visi</h1>
-                <p>“Internalisasi dan dinamisasi organisasi dalam upaya pengembalian jati diri TEC ITB untuk mendukung pengembangan diri anggota TEC ITB secara komunal.”</p>
-                <h1 class="home-text-main text-center" style="color:white;padding-top:1em">Misi</h1>
-                <p>1. Menumbuhkan jiwa kekeluargaan di tubuh TEC ITB.</p>
-                <p>2. Menciptakan wadah pemahaman organisasi bagi seluruh anggota TEC ITB.</p>
-                <p>3. Meningkatkan pengalaman praktikal dalam membangun dan mempertahankan perkembangan bisnis.</p>
-                <p>4. Menciptakan dasar organisasi dan nilai yang bersifat sustainable</p>
-              </div>
-            </div>   
+        </div>
+        <div class="container-fluid careo-box d-flex justify-content-center" id="mobile-compact-about">    
                 <div class="row" style="margin-top:2em;">
                     <div class="col careo-border">
                         <h1 class='home-text-main careo' id="Careokarsa">Careokarsa</h1>
@@ -198,7 +242,7 @@
                         <img src="src/internal-0.png" alt="Internal" style="width:80%">
                         <div class="col text-center text-wrap" style="padding-top: .5em;">
                             <p>Careocita atau Internal adalah Kemenkoan yang bertanggung jawab dalam hal yang berkaitan dengan keanggotaaan TEC ITB hal ini mencakup data anggota hingga kenyamanan anggota. Kemenkoan Internal terdiri atas Menteri Koordinator Internal, Menteri Persahabatan dan Menteri MSDM.</p>
-                          </div>
+                        </div>
                         <a type="button" class="btn btn-info btn-lg" href="">Data Anggota</a>
                     </div>
                     <div class="col careo-border">
@@ -206,7 +250,7 @@
                         <img src="src/bisnis-0.png" alt="bisnis" style="width:80%">
                         <div class="col text-center text-wrap" style="padding-top: .5em;">
                             <p>Careocipta atau Bisnis adalah Kemenkoan yang bertanggung jawab dalam hal keilmuan bisnis dan kebutuhan anggota TEC ITB. Kemenkoan Bisnis terdiri dari Menteri Koordinator Bisnis, Menteri Keilmuan Bisnis dan Menteri Badan Usaha.</p>
-                          </div>
+                        </div>
                         <a type="button" class="btn btn-info btn-lg" href="">TECTalks</a>
                     </div>
                     <div class="col careo-border">
@@ -214,52 +258,58 @@
                         <img src="src/media-0.png" alt="Media" style="width:80%">
                         <div class="col text-center text-wrap" style="padding-top: .5em;">
                             <p>Careokarya atau Media adalah Kemenkoan yang bertanggung jawab atas <i>platform</i> media, penyebaran informasi dan dokumentasi kegiatan di TEC ITB. Kemenkoan Media terdiri atas Menteri Koordinator Media, Menteri Publikasi dan Menteri Dokumentasi</p>
-                          </div>
+                        </div>
                         <a type="button" class="btn btn-info btn-lg" href="">Dokumentasi</a>
                     </div>
                 </div>
         </div>
-    </div>
-    <div class="container-fluid home-container">
-            <div class="careo-textbox">
-                <h1 class="home-text-main text-center" style="color:white">Our Project</h1>   
-                    <div class="row" style="margin-top:2em;">
-                        <div class="col careo-border">
-                            <h1 class="home-text-main careo">TECFEST 2020</h1>
-                            <img src="src/tecfest.png" alt="TEC Internship" class="img-thumbnail" style="width:400px">
-                            <div class="col text-center text-wrap" style="padding-top: .5em">
-                                <p>TECFEST adalah rangkaian kegiatan yang terdiri dari seminar dan lomba bisnis yang diadakan oleh TEC ITB tiap tahunnya. TECFEST 2020 mengangkat tema "Peran Technopreneur dalam Menciptakan Inovasi Pemutar Roda Ekonomi Kreatif Indonesia".</p>
-                            </div>
-                            <a type="button" class="btn btn-info btn-lg" href="" style="margin-top: .5em;">TECFEST Guidelines</a>
-                            <a type="button" class="btn btn-info btn-lg" href="" style="margin-top: .5em;">TECFEST Instagram</a>
-                        </div>
-                        <div class="col careo-border">
-                            <h1 class="home-text-main careo">TEC Internship</h1>
-                            <img src="src/intern.png" alt="TEC Internship" class="img-thumbnail" style="width:400px">
-                            <div class="col text-center text-wrap" style="padding-top: .5em;">
-                                <p>TEC Internship adalah proses kaderisasi yang dijalani oleh mahasiswa ITB sebelum menjadi anggota resmi TEC ITB. TEC Internship menjadi langkah awal calon anggota memperoleh keilmuan bisnis di TEC ITB. Proses TEC Internship terdiri dari Business Class, Business Challenge dan Nightinternship.</p>
-                              </div>
-                            <a type="button" class="btn btn-info btn-lg" href="">Daftar</a>
-                        </div>
+        <div class="container-fluid careo-box d-flex justify-content-center" id="mobile-compact-about">
+            <div  style="max-width: 40em;">
+                <h1 class="careo-title text-center">Project TEC ITB</h1>
+                <h1 class="careo-title text-center" style="font-size:large;color:orange">Kegiatan kemahasiswaan yang dilakukan oleh TEC ITB</h1>
+                <!-- <p class="careo-parag"><b>Techno Entrepreneur Club ITB</b> merupakan unit yang menghimpun mahasiswa ITB yang memiliki minat <b>kewirausahaan</b>. Didirikan pada tahun 2009 TEC ITB menghimpun mahasiswa ITB untuk belajar dan mengembangkan bisnis masing-masing sejak masa perkuliahan.<br><br><b>Global, Enrich, dan High Impact</b> merupakan motto dari TEC ITB. Dari motto tersebut TEC ITB bertujuan untuk menciptakan calon pengusaha dengan ilmu bisnis yang luas demi membentuk pengusaha yang mampu bersaing  dalam tingkat global dan membawa pengaruh besar bagi lingkungan sekitarnya. TEC ITB memiliki berbagai jenis kegiatan untuk mengembangkan keilmuan bisnis anggotanya. Beberapa kegiatan tersebut diantaranya, TEC Internship, Seminar Bisnis, dan masih banyak lagi. Hingga saat ini anggota aktif TEC berjumlah 270 orang yang terdiri dari mahasiswa TPB hingga tingkat akhir. </p> -->
+            </div>
+        </div>
+        <div class="container-fluid careo-box d-flex justify-content-center" id="mobile-compact-about">    
+            <div class="row"">
+                <div class="col careo-border">
+                    <h1 class="home-text-main careo">TECFEST 2020</h1>
+                    <img src="src/tecfest.png" alt="TEC Internship" class="img-thumbnail" style="width:400px">
+                    <div class="col text-center" style="padding-top: .5em;max-width:40em">
+                        <p>TECFEST adalah rangkaian kegiatan yang terdiri dari seminar dan lomba bisnis yang diadakan oleh TEC ITB tiap tahunnya. TECFEST 2020 mengangkat tema "Peran Technopreneur dalam Menciptakan Inovasi Pemutar Roda Ekonomi Kreatif Indonesia".</p>
                     </div>
+                    <a type="button" class="btn btn-info btn-lg" href="https://bit.ly/TECFESTGuidelines" target="_blank" style="margin-top: .5em;">TECFEST Guidelines</a>
+                    <a type="button" class="btn btn-info btn-lg" href="https://www.instagram.com/tecfest_id/" target="_blank" style="margin-top: .5em;">TECFEST Instagram</a>
                 </div>
+                <div class="col careo-border">
+                    <h1 class="home-text-main careo">TEC Internship</h1>
+                    <img src="src/intern.png" alt="TEC Internship" class="img-thumbnail" style="width:400px">
+                    <div class="col text-center" style="padding-top: .5em;max-width:40em">
+                        <p>TEC Internship adalah proses kaderisasi yang dijalani oleh mahasiswa ITB sebelum menjadi anggota resmi TEC ITB. TEC Internship menjadi langkah awal calon anggota memperoleh keilmuan bisnis di TEC ITB. Proses TEC Internship terdiri dari Business Class, Business Challenge dan Nightinternship.</p>
+                    </div>
+                    <a type="button" class="btn btn-info btn-lg" id="Daftar" style="color:white">Daftar</a>
+                </div>
+                </div>
+            
+        </div>
     </div>
 </body>
-<footer">
-  <div class="container-fluid" style="background-color:white;padding: 1em;"> 
-    <div class="row justify-content-center">
-    <div class="col">
-      <img src="src/logo-.png" width="40px">
+<footer>
+    <div class="container-fluid" style="background-color:white;padding: 1em;"> 
+      <div class="row justify-content-center">
+      <div class="col">
+        <img src="src/logo-.png" id="logo-tec-footer">
+      </div>
+      <div class="col text-center text-wrap">
+        <p>Website ini dikembangkan oleh <b>Kementerian Careokarya</b> TEC ITB</p>
+      </div>
+      <div class="col text-center">
+        <a class ="media-footer-padding" href="https://instagram.com/tec.itb" target="_blank"><img src="src/instagram-ico.png" class="social-icon" title="Instagram"></a>
+        <a class ="media-footer-padding" href="https://lin.ee/2J11HHAGV" target="_blank"><img src="src/line-ico.png" class="social-icon" title="Line OA"></a>
+        <a class ="media-footer-padding"><img src="src/spotify-ico.png" class="social-icon" title="Coming Soon"></a>
+        <a class ="media-footer-padding" href="https://medium.com/@tec_itb" target="_blank"><img src="src/medium-ico.png" class="social-icon" title="Medium"></a>
+      </div>
     </div>
-    <div class="col text-center text-wrap">
-      <p>Website ini dikembangkan oleh <b> Kementerian Careokarya</b> TEC ITB</p>
     </div>
-    <div class="col text-center">
-      <a class ="media-footer-padding" href="https://instagram.com/tec.itb" target="_blank"><img src="src/instagram-ico.png" class="social-icon" title="Instagram"></a>
-      <a class ="media-footer-padding" href="https://lin.ee/2J11HHAGV" target="_blank"><img src="src/line-ico.png" class="social-icon" title="Line OA"></a>
-      <a class ="media-footer-padding"><img src="src/spotify-ico.png" class="social-icon" title="Coming Soon"></a>
-      <a class ="media-footer-padding" href="https://medium.com/@tec_itb" target="_blank"><img src="src/medium-ico.png" class="social-icon" title="Medium"></a>
-    </div>
-  </div>
-  </div>
-</footer>
+  </footer>
+
