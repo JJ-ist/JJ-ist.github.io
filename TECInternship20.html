@@ -4,13 +4,8 @@
   <title>Dokumen TEC Internship</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href ="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <style>
       html{
-            scroll-behavior: smooth;
             font-family: Arial, Helvetica, sans-serif;
         }
       body{
@@ -28,27 +23,63 @@
       }
       button{
           padding: 12px;
+          margin: 6px;
           background-color:white;
           border:none;
-          border-radius:16px;
+          border-radius:2px;
+          width:256px;
+      }
+      button:hover{
+          animation: .1s radi ease-in-out forwards .1s;
+      }
+      @keyframes radi{
+          100%{
+          border-radius: 32px;
+          }
+      }
+      a{
+        text-decoration:none;
+        color:rgb(22, 22, 22);
+        text-align: justify;
+        font-weight: bold;
+      }
+      a:hover{
+          text-decoration:none;
+            color:rgb(22, 22, 22);
+      }
+      .container{
+          display: flex;
+          margin: 0 auto;
+          flex-direction: column;
+          align-items: center;
+      }
+      .button-container{
+          margin-left:70em;
+          margin-right:70em;
+          text-align: center;
       }
   </style>
 </head>
-<body class="container-fluid justify-content-center">
-    <h1>Link Dokumen TEC Internship 2020</h1>
-    <button id="button"><a href="https://bit.ly/DraftKetuaTECInternship2020" target="_blank">Draft Ketua Internship 2020</a></button>
-    <button id="button"><a href="https://bit.ly/LinmasIntern2020" target="_blank">Linimasa Utama dan Divisi Internship 2020</a></button>
-    <button id="button"><a href="https://bit.ly/TeklapIntern2020" target="_blank">Teknis Lapangan Internship 2020</a></button>
-    <button id="button"><a href="https://bit.ly/RundownTECInternship2020" target="_blank">Rundown Internship 2020</a></button>
-    <h2> Materi dan Metode: </h2>
-    <button id="button"><a href="https://bit.ly/AnalkonIdealMateri" target="_blank">Analkon Materi</a></button>
-    <button id="button"><a href="https://bit.ly/AnalkonIdealMetode" target="_blank">Analkon Metode</a></button>
-    <button id="button"><a href="https://bit.ly/SpreadSheetMametTEC20" target="_blank">Matriks Mamet</a></button>
-    <button id="button"><a href="https://bit.ly/TORMaterintership2020" target="_blank">TOR Materi</a></button>
-    <h2>MSDM</h2>
-    <button id="button"><a href="https://bit.ly/PeraturanPesertaTECInternship2020" target="_blank">Peraturan Peserta</a></button>
-    <button id="button"><a href="https://bit.ly/KontrakBelajarTECInternship2020" target="_blank">Kontrak Belajar</a></button>
-    <button id="button"><a href="https://bit.ly/SOP2020PANIT" target="_blank">SOP Panitia</a></button>
-    <button id="button"><a href="https://bit.ly/ngaspirasiskuy" target="_blank">Form ngAspirasi</a></button>
-    <button id="button"><a href="https://bit.ly/PeerPanit2020" target="_blank">Peer Assesment Panitia</a></button>
+<body>
+    <div class="container">
+        <img src="tec-logo.png" style="width:400px">
+        <h1>Link Dokumen TEC Internship 2020</h1><br>
+        <div class="button-container">
+            <button id="button"><a href="https://bit.ly/DraftKetuaTECInternship2020" target="_blank">Draft Ketua Internship 2020</a></button>
+            <button id="button"><a href="https://bit.ly/LinmasIntern2020" target="_blank">Linimasa Utama dan Divisi Internship 2020</a></button>
+            <button id="button"><a href="https://bit.ly/TeklapIntern2020" target="_blank">Teknis Lapangan Internship 2020</a></button>
+            <button id="button"><a href="https://bit.ly/RundownTECInternship2020" target="_blank">Rundown Internship 2020</a></button>
+            <h2> Materi dan Metode: </h2>
+            <button id="button"><a href="https://bit.ly/AnalkonIdealMateri" target="_blank">Analkon Materi</a></button>
+            <button id="button"><a href="https://bit.ly/AnalkonIdealMetode" target="_blank">Analkon Metode</a></button>
+            <button id="button"><a href="https://bit.ly/SpreadSheetMametTEC20" target="_blank">Matriks Mamet</a></button>
+            <button id="button"><a href="https://bit.ly/TORMaterintership2020" target="_blank">TOR Materi</a></button>
+            <h2>MSDM</h2>
+            <button id="button"><a href="https://bit.ly/PeraturanPesertaTECInternship2020" target="_blank">Peraturan Peserta</a></button>
+            <button id="button"><a href="https://bit.ly/KontrakBelajarTECInternship2020" target="_blank">Kontrak Belajar</a></button>
+            <button id="button"><a href="https://bit.ly/SOP2020PANIT" target="_blank">SOP Panitia</a></button>
+            <button id="button"><a href="https://bit.ly/ngaspirasiskuy" target="_blank">Form ngAspirasi</a></button>
+            <button id="button"><a href="https://bit.ly/PeerPanit2020" target="_blank">Peer Assesment Panitia</a></button>
+    </div>
+    </div>
 </body>
