@@ -1,22 +1,26 @@
 body {
     font-family: 'Inter', sans-serif;
-    padding: 10em 5em;
+    padding: 6em 5em 0em 5em;
     color:#FEFEFE;
     background-color: #141414;
     transition: 0.3s;
+}
+
+.outer_wraper{
+    padding-top: 4em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.header button{
+.title_container button{
     background:none;
     border-style: none;
     color: inherit;
 }
 
-.header button i{
+.title_container button i{
     color: inherit;
 }
 
@@ -25,47 +29,64 @@ body {
     background-color: #FEFEFE;
 }
 
-.header{
+.title_container{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.title_wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.inner_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items:flex-start
 }
 
 .love{
     transform: translateZ(100px);
 }
 
-.header h1 {
+.title_container h1 {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 0em;
     transition: 0.3s;
 }
 
-.header h1:hover {
+.title_container h1:hover {
     letter-spacing: 0.2em;
 }
 
-.main .upper h1{
+.main .intro h1{
     font-size: 36px;
     font-weight: 600;
     margin-bottom: 1em;
 }
 
-.main .upper p{
+.main .intro p{
     font-size: 24px;
     font-weight: 400;
-    max-width: 20em;
+    max-width: 30em;
 }
 
-.main .re a{
+.nav_container a{
     font-size: 24px;
     font-weight: 600;
-    padding-right: 2em;
+    padding-left: 2em;
     text-decoration: none;
     color:inherit;
     transition: 0.3s;
 }
 
-.main .re a:hover{
+.nav_container a:hover{
     font-size: 30px;
 }
 

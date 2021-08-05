@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>About J</title>
+    <title>Jj — Justin Dermawan Ikhsan</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
     <link rel="stylesheet" href ="src/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="src/Typed.js"></script>
     <script src="src/script.js"></script>
+    <script stc='https://unpkg.com/houdini-tooltip@1.0.0/index.js'></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
 </head>
 <body>
-<div class="container">
-    <div class="header">
+<div class="title_wrapper">
+    <div class="title_container">
         <h1> Justin Dermawan Ikhsan</h1>
         <button onclick="lightMode()"><i class="fi fi-br-bulb"></i></button>
     </div>
-    <div class="main">
-        <div class="upper">
-            <h1>Well, well, well 👋<br>Fancy meeting you here!</h1>
-            <p>I suppose you stumble upon clicking to this website of mine, yes? Well I don’t want to be rude so let me introduce myself ✨</p>
-            <p>My name is Justin Dermawan Ikhsan and I am <span id="quote"></span></p>
-        <div class="re">
-            <a id="link" target="_blank" href="https://www.linkedin.com/in/justinjojas/">Resume</a>
-            <a id="link" target="_blank" href="https://www.behance.net/justinjojas">Portfolio</a>
-        </div>
-        </div>
+    <div class="nav_container">
+        <a id="link" target="_blank" href="https://www.linkedin.com/in/justinjojas/">Resume</a>
+        <a id="link" target="_blank" href="https://www.behance.net/justinjojas">Portfolio</a>
     </div>
 </div>
-<div class="love">
-    <p style="font-size: 144px;">💘</p>
+<div class="outer_wraper">
+    <div class="inner_wrapper"  >
+        <div class="main">
+            <div class="intro">
+                <h1>Well, well, well 👋<br>Fancy meeting you here!</h1>
+                <p>I suppose you stumble upon clicking to this website of mine, yes? Well I don’t want to be rude so let me introduce myself ✨</p>
+                <p>My name is Justin Dermawan Ikhsan and I am a 3rd year information system and technology student at <a target="_blank" href="https://www.itb.ac.id/">ITB</a>💻 I am an <a target="_blank" href="https://www.behance.net/justinjojas" >UI/UX</a> enthusiast and have won and participated in several UI/UX Competition🏆 I am a tech-geek who is interested in digital product development📱</p>
+                <p>My technical skills includes <span id="skill"></span></p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="love">
+        <p style="font-size: 144px;">💘</p>
+    </div>
 </div>
 </body> 

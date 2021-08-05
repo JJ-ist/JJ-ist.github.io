@@ -447,8 +447,8 @@
 
 
   $(function(){
-      $("#quote").typed({
-        strings: ["a 3rd year information system student.","an UI/UX enthusiast.","a techno geek!","interested in digital product development","a 3rd year information system student.","an UI/UX enthusiast.","a techno geek!","interested in digital product development","a 3rd year information system student.","an UI/UX enthusiast.","a techno geek!","interested in digital product development"],
-        typeSpeed: 50
+      $("#skill").typed({
+        strings: ["UI/UX Design process using Figma, Sketch, Adobe XD","front end web development with HTML, CSS, JavaScript (Quite familiar with Vue.js, Tailwind)","programming with Python, C, Pascal, C++, Java"],
+        typeSpeed: 20
       });
   });
