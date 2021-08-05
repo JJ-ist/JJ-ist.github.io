@@ -448,7 +448,7 @@
 
   $(function(){
       $("#quote").typed({
-        strings: ["a 3rd year information system student.","an UI/UX enthusiats.","a techno geek!","a digital product enthusiats","a 3rd year information system student.","an UI/UX enthusiats.","a techno geek!","a digital product enthusiats","a 3rd year information system student.","an UI/UX enthusiats.","a techno geek!","a digital product enthusiats"],
+        strings: ["a 3rd year information system student.","an UI/UX enthusiast.","a techno geek!","interested in digital product development","a 3rd year information system student.","an UI/UX enthusiast.","a techno geek!","interested in digital product development","a 3rd year information system student.","an UI/UX enthusiast.","a techno geek!","interested in digital product development"],
         typeSpeed: 50
       });
   });
