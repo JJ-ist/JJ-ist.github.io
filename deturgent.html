@@ -14,25 +14,37 @@
     <script src="src/deturgent.js"></script>
 </head>
 <body>
+    <div class="sidebar" style="display:none;right:0;" id="mySidebar">
+        <div class="sidebar-wrapper">
+            <div class="end">   
+                <button onclick="SidebarClose()" ><i class="fi fi-br-cross-small"></i></button>
+            </div>
+            <a href="#about" onclick="SidebarClose()">ABOUT</a>
+            <a href="#product" onclick="SidebarClose()">PRODUCTS</a>
+            <a href="#" onclick="SidebarClose()">SHOP</a>
+            <a href="#contact" onclick="SidebarClose()">CONTACT</a>
+        </div>
+        
+    </div>
     <section class="home">
         <div class="navbar">
             <button id="text-nav">
-                <h2>ABOUT</h2>
+                <a href="#about">ABOUT</a>
             </button>
             <button id="text-nav">
-                <h2>PRODUCTS</h2>
+                <a href="#product">PRODUCTS</a>
             </button>
             <button id="logo-nav">
                 <img src="src/images/logo.png">
             </button>
-            <button id="menu-nav">
+            <button onclick="SidebarOpen()" id="menu-nav">
                 <i class="fi fi-br-menu-burger"></i>
             </button>
             <button id="text-nav">
-                <h2>SHOP</h2>
+                <a href="#">SHOP</a>
             </button>
             <button id="text-nav">
-                <h2>CONTACT</h2>
+                <a href="#contact">CONTACT</a>
             </button>
             <!-- here will be navbar -->
         </div>
@@ -52,7 +64,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-container">
             <div class="text-wrapper">
                 <h1>About Deturgent</h1>
@@ -83,7 +95,7 @@
             <h2>Enak baunya gan</h2>
         </div>       
     </section>
-    <section class="product">
+    <section class="product" id="product">
         <h1>Our Product</h1>
         <div class="product-carousel">
             <div class="product">
@@ -107,7 +119,7 @@
             </div>
         </div>
     </section>
-    <section class="footer">
+    <section class="footer" id="contact">
         <div class="cta">
             <h1> Sustainable living starting now!</h1>
             <button>Buy Deturgent</button>

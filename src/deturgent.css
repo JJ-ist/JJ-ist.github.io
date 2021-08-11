@@ -1,8 +1,108 @@
+/* Deturgent.css
+are part of Deturgent landing page website
+developed by: behance.net/justinjojas */
+
+/* CSS Variables */
+
 :root {
     --main: #11493e;
     --white: #fcfcfc;
   }
-  
+
+/* Animation Keyframes */
+@keyframes slideInFromBelow {
+    0% {
+      transform: translateY(50%);
+      opacity: 0%;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 100%;
+    }
+  }
+
+  @keyframes slideInFromAbove {
+    0% {
+      transform: translateY(-50%);
+      opacity: 0%;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 100%;
+    }
+  }
+
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(50%);
+      opacity: 0%;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 100%;
+    }
+  }
+
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-50%);
+      opacity: 0%;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 100%;
+    }
+  }
+
+/* Try navbar */
+.sidebar {
+    height:100%;
+    width:200px;
+    background-color:#fff;
+    color: var(--main);
+    position:fixed!important;
+    z-index:1;
+    overflow:auto;
+}
+
+.sidebar-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 1em;
+}
+
+.sidebar-wrapper a{
+    font-style: normal;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: inherit;
+    padding-top: 1em;
+}
+.end{
+    display: flex;
+    width: 80%;
+    padding-right: 1em;
+    justify-content: flex-end;
+}
+
+.end button{
+    background:none;
+    border-style: none;
+    cursor: pointer;
+    color: inherit;
+    font-family: inherit;
+
+}
+
+
+
+/* Style */
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Merriweather', serif;
     scroll-behavior: smooth;
@@ -25,6 +125,7 @@ body {
 }
 
 .navbar{
+    animation: 1s ease-in 0s 1 slideInFromAbove;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -40,14 +141,20 @@ body {
     font-family: inherit;
 }
 
-.navbar button h2{
+.navbar button a{
+    text-decoration: none;
+    color:var(--white);
     font-size: 14px;
     font-weight: 300;
     transition: 0.3s;
 }
 
-.navbar button h2:hover{
+.navbar button a:hover{
     letter-spacing: 0.1em;
+}
+
+a:visited{
+    color:inherit;
 }
 
 .read-more button{
@@ -64,6 +171,10 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 5em;
+}
+
+.content{
+    animation: 1s ease-in 0s 1 slideInFromRight;
 }
 
 .content h1{
@@ -230,24 +341,21 @@ footer{
 .category p{
     max-width: 20em;
 }
-
+  
 .image img{
+    animation: 1s ease-in 0s 1 slideInFromBelow;
     height: 50em;
     min-height: 10em;
+
 }
 
 #menu-nav{
     display: none;
 }
 
+
+/* For mobile phones */
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    body{
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; */
-    }
     .home{
         display: flex;
         flex-direction: column;
@@ -264,7 +372,7 @@ footer{
     .body-content{
         flex-direction: column;
         align-content: center;
-        text-align: center;
+        text-align: center;  
     }
 
     .body-content .content h1{
