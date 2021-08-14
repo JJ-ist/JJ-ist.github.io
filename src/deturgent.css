@@ -62,7 +62,7 @@ developed by: behance.net/justinjojas */
     color: var(--main);
     position:fixed!important;
     z-index:1;
-    overflow:auto;
+    overflow:hidden;
 }
 
 .sidebar-wrapper{
@@ -96,8 +96,6 @@ developed by: behance.net/justinjojas */
     font-family: inherit;
 
 }
-
-
 
 /* Style */
 html{
@@ -366,7 +364,7 @@ footer{
     .navbar{
         width: 100%;
         justify-content: space-between; 
-        padding: 1em 2em 0em 2em;
+        padding: 0.5em 0em;
     }
 
     .body-content{
