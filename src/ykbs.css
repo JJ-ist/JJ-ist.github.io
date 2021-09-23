@@ -1,0 +1,148 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #2F2F2F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.title-nav h1{
+    font-weight: 800;
+}
+
+button{
+    background:none;
+    border-style: none;
+}
+
+.action{
+    padding: 16px 32px;
+    background: #F55C47;
+    box-shadow: 0px 8px 21px rgba(255, 72, 72, 0.6);
+    border-radius: 32px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.action:hover{
+    letter-spacing: 0.2em;
+    box-shadow: 0px 0px 21px rgba(255, 72, 72, 0.6);
+
+}
+
+
+button i{
+    font-size: 24px;
+    color: #F55C47;
+    transition: 0.3s;
+}
+
+button i:hover{
+    color: #e04733;
+}
+
+button i:active{
+    font-size: 30px;
+}
+
+
+.upper-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 90px 90px;
+}
+
+.title-nav{
+    display: flex;
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+.landing-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;   
+}
+
+.landing-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.landing-content h1{
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.landing-content p{
+    font-size: 36px;
+    font-weight: 400;
+    max-width: 70rem;
+}
+
+.image-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+    padding: 0px; 
+}
+
+.hand {
+    width: 80%;
+    height:auto;
+}
+
+.slice-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.slice-wrapper h1{
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.benefit{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.item{
+    margin: 0px 40px;
+}
+.item h2{
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    color: #F55C47;
+}
+.item p{
+    font-style: normal;
+    font-size: 24px;
+    text-align: center;
+}
+
+.read-more{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;   
+}
