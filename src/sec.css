@@ -1,0 +1,98 @@
+body {
+  font-family: Inter;
+  background-image: url("images/Backdrop-Sec.png");
+  overflow-x: hidden;
+}
+
+.container{
+  padding-top: 2em;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+
+.bd_title{
+    font-size: 64px;
+    font-weight: 700;
+    color: #D83B57;
+    font-family: 'Shadows Into Light', cursive;
+    margin: 0em;
+}
+
+.bd_name{
+    font-size: 48px;
+    font-weight: 500;
+    color: #D83B57;
+    margin-top:.25em;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.title{
+  font-size: 96px;
+  color: #D83B57;
+  font-family: 'Shadows Into Light', cursive;
+  margin-top:.25em;
+}
+
+.cloud{
+  position: absolute;
+}
+
+#cloud_1{
+  left: -10px;
+}
+
+#cloud_2{
+  right: -10px;
+}
+
+#cloud_3{
+  left: 30%;
+}
+
+#cloud_4{
+  right: 30%;
+}
+
+.content-section{
+    width: 100%;
+    padding-top: 2em;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+
+#c2{
+  flex-direction: row-reverse;
+}
+
+#c3{
+  flex-direction: column;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: start;
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.onscreen{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.flex-container > div {
+  padding: 1em 3em;
+}
+
+.bio p {
+    font-size: 24px;
+}

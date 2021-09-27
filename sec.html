@@ -9,22 +9,88 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <script src="src/Typed_sec.js"></script>
 </head>
 <body>
+    <iframe src="src/audio/play.mp3" allow="autoplay" style="display:none" id="fr"></iframe>
     <div class="container">
-        <div id="particles-js">
-            <div class="main">
-
-            </div>
-            <div class="fun">
-
-            </div>
-            
+        <div class="cloud" id="cloud_1">
+            <img src="src/images/cloud-1.png">
+        </div>
+        <div class="cloud" id="cloud_2">
+            <img src="src/images/cloud-2.png">
+        </div>
+        <div class="flex-container" id="c3">
+            <h1 class="bd_title">Happy 20th Birthday!</h1>
+            <h2 class="bd_name">Lorem Ipsum Dolor!</h2>
+            <img class="image" src='src/images/j.png' style="width: 30%;">
         </div>
     </div>
-    <script src="particle/particles.js"></script>
-    <script src="particle/app.js"></script>
+    <div class="container">
+        <div class="cloud" id="cloud_3">
+            <img src="src/images/cloud-2.png">
+        </div>
+            <div class="flex-container">
+                <div>
+                    <h1 class="title" >About You</h1>
+                </div>
+                <div class="bio">
+                    <p><b>Nama           :</b> Lorem Ipsum Dolor Sit Amet</p>
+                    <p><b>Nama Panggilan :</b> Lorem Ipsum Dolor Sit Amet</p>
+                    <p><b>Nama Terlarang :</b> Lorem Ipsum Dolor Sit Amet</p>
+                    <p><b>Tanggal Lahir  :</b> Lorem Ipsum Dolor Sit Amet</p>
+                    <p><b>Planet Lahir   :</b> Lorem Ipsum Dolor Sit Amet</p>
+                    <p><b>Most loved     :</b> Lorem Ipsum Dolor Sit Amet</p>
+                </div>
+            </div>
+    </div>
+    <div class="container">
+        <div class="cloud" id="cloud_1">
+            <img src="src/images/cloud-3.png">
+        </div>
+        <div class="cloud" id="cloud_2">
+            <img src="src/images/cloud-4.png">
+        </div>
+        <div class="flex-container" id="c2">
+            <div>
+                <h1 class="title" >Your Journey</h1>
+            </div>
+            <div class="bio">
+                <p><b>Nama           :</b> Lorem Ipsum Dolor Sit Amet</p>
+                <p><b>Nama Panggilan :</b> Lorem Ipsum Dolor Sit Amet</p>
+                <p><b>Nama Terlarang :</b> Lorem Ipsum Dolor Sit Amet</p>
+                <p><b>Tanggal Lahir  :</b> Lorem Ipsum Dolor Sit Amet</p>
+                <p><b>Planet Lahir   :</b> Lorem Ipsum Dolor Sit Amet</p>
+                <p><b>Most loved     :</b> Lorem Ipsum Dolor Sit Amet</p>
+            </div>
+            </div>
+    </div>
+    <div class="container">
+        <div class="cloud" id="cloud_1">
+            <img src="src/images/cloud-2.png">
+        </div>
+        <div class="cloud" id="cloud_2">
+            <img src="src/images/cloud-1.png">
+        </div>
+        <div class="flex-container" id="c3">
+            <div>
+                <h1 class="title" >In this 20 year...</h1>
+            </div>
+            <div class="cards">
+                <div class="card">
+
+                </div>
+            </div>
+            </div>
+    </div>
+    <div class="container">
+        <h2 class="title" style="font-size:48px;">I wish you <span id="wish"></span></h2>
+    </div>
+    <script src="src/app.js"></script>
 </body>
 </html>
