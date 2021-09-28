@@ -9,7 +9,10 @@ function init()
 	screenHeight = window.innerHeight;
 }
 
-
+function next()
+{
+  document.getElementsByClassName("load")[0].classList.add('move')
+}
 window.onmousemove = function( event ) {
   var mouseX = event.pageX/screenWidth;	
   var mouseY = event.pageY/screenHeight;	

@@ -5,12 +5,11 @@ body {
 }
 
 .container{
-  padding-top: 2em;
+  /* padding-top: 2em; */
   align-items: center;
   align-content: center;
   text-align: center;
 }
-
 
 .bd_title{
     font-size: 64px;
@@ -18,6 +17,11 @@ body {
     color: #D83B57;
     font-family: 'Shadows Into Light', cursive;
     margin: 0em;
+    transition: letter-spacing 0.5s ease;
+}
+
+.bd_title:hover{
+  letter-spacing: .25em;
 }
 
 .bd_name{
@@ -33,6 +37,11 @@ body {
   color: #D83B57;
   font-family: 'Shadows Into Light', cursive;
   margin-top:.25em;
+  transition: letter-spacing 0.5s ease;
+}
+
+.title:hover{
+letter-spacing: .25em;
 }
 
 .cloud{
@@ -65,7 +74,7 @@ body {
 
 
 #c2{
-  flex-direction: row-reverse;
+  flex-direction: column;
 }
 
 #c3{
@@ -74,7 +83,7 @@ body {
 
 .flex-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -89,10 +98,260 @@ body {
   opacity: 1;
 }
 
-.flex-container > div {
+/* .flex-container > div {
   padding: 1em 3em;
-}
+} */
 
 .bio p {
     font-size: 24px;
 }
+
+.time {
+  padding: 0em 2em;
+}
+.time .component {
+  display: flex;
+  flex-direction: column;
+}
+
+.time_title{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.time_title h1{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 32px;
+  margin: 0px 12px;
+  transition: letter-spacing 0.5s ease;
+}
+
+.time_title h1:hover{
+  letter-spacing: .1em;
+  }
+  
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #D83B57;
+  border-radius: 50%;
+  display: inline-block;
+  align-self: center;
+}
+
+.line{
+  width: 75px;
+  height: 10px;
+  background-color: #D83B57;
+  margin-left: -1%;
+  border-radius: 10px;
+  display: inline-block;
+  align-self: center;
+}
+
+.time_desc{
+  /* max-width: 20rem; */
+  font-size: 16px;  
+}
+
+.slider {
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  
+  
+  
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  
+  /*
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+  */
+}
+.bn39 {
+  margin-top: 1em;
+  background-image: linear-gradient(135deg, #D83B57, #851b2f);
+  border-radius: 50px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: block;
+  height: 50px;
+  font-size: 1.4em;
+  font-weight: 600;
+  padding: 4px;
+  position: relative;
+  text-decoration: none;
+  width: 7em;
+  z-index: 2;
+  text-align: center;
+  justify-content: center;
+  transition: background-image 0.5s ease;
+}
+
+.bn39:hover {
+  background-image: linear-gradient(135deg, #851b2f, #D83B57);
+}
+
+.load{
+  font-family: 'Shadows Into Light', cursive;
+  color:#D83B57;
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("images/Backdrop-Sec.png");
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+
+.move{
+  display: none;
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  color: #D83B57;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  margin-right: 50px;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+/* .slides > div:target {
+   transform: scale(0.8); 
+} */
+
+.slider > a {
+  display: inline-flex;
+  width: 3rem;
+  height: 3rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #a71d36;
+}
+
+.slider > a:hover{
+  background-color: #D83B57;
+}
+
+/* Don't need button navigation */
+@supports (scroll-snap-type) {
+  .slider > a {
+    display: none;
+  }
+}
+
+.audio-box {
+  margin: 0 auto;
+  align-self: center;
+  align-content: center;
+  text-align: center;
+}
+
+.cards{
+  display: flex;
+  flex-direction: row;
+  margin: .2em 0;
+}
+
+.card{
+  width: 3em;
+  background-color: #fcfcfc;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: ;
+  border: 1px solid #D83B57;
+  box-shadow: 0px 0px #D83B57;
+  transition: box-shadow .5s ease;
+  margin: 0 .2em;
+}
+
+.card:hover{
+  box-shadow: 5px 10px #D83B57;
+
+}
+.card img{
+  max-width: 100%;
+}
+
+.card h3{
+  font-size: 24px;
+  color: #D83B57;
+  font-family: 'Shadows Into Light', cursive;
+  text-align: center;
+}
+
+.box{
+  height: 6em;
+  overflow:auto;
+}
+
+.box::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  }
+  
+  .box::-webkit-scrollbar-track {
+  border: 1px solid #D83B57;
+  border-radius: 10px;
+  }
+  
+  .box::-webkit-scrollbar-thumb {
+  background: #D83B57;  
+  border-radius: 10px;
+  }
+  
+  .box::-webkit-scrollbar-thumb:hover {
+  background: ##D83B57;  
+  }

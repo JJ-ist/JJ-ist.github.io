@@ -17,79 +17,165 @@
     <script src="src/Typed_sec.js"></script>
 </head>
 <body>
-    <iframe src="src/audio/play.mp3" allow="autoplay" style="display:none" id="fr"></iframe>
-    <div class="container">
-        <div class="cloud" id="cloud_1">
-            <img src="src/images/cloud-1.png">
+    <!-- <div class="load">
+        <h1>Please play the audio below before continuing your journey</h1>
+        <h2>You may adjust the volume to your desire</h2>
+        <div class="audio-box">
+            <audio controls autoplay>
+                <source src="src/audio/play.mp3" type="audio/mp3">
+            </audio>
         </div>
-        <div class="cloud" id="cloud_2">
-            <img src="src/images/cloud-2.png">
-        </div>
-        <div class="flex-container" id="c3">
-            <h1 class="bd_title">Happy 20th Birthday!</h1>
-            <h2 class="bd_name">Lorem Ipsum Dolor!</h2>
-            <img class="image" src='src/images/j.png' style="width: 30%;">
-        </div>
-    </div>
-    <div class="container">
-        <div class="cloud" id="cloud_3">
-            <img src="src/images/cloud-2.png">
-        </div>
-            <div class="flex-container">
-                <div>
-                    <h1 class="title" >About You</h1>
+        <a class="bn39" onclick="next()">Continue</a>
+    </div> -->
+    
+    <div class="slider">
+        <a href="#happy">🍰</a>
+        <a href="#you">🥰</a>
+        <a href="#journey">🖊️</a>
+        <a href="#year">📆</a>
+        <a href="#wishes">💭</a>
+        <div class="slides">    
+            <div class="container" id="happy">
+                <div class="cloud" id="cloud_1">
+                    <img src="src/images/cloud-1.png">
                 </div>
-                <div class="bio">
-                    <p><b>Nama           :</b> Lorem Ipsum Dolor Sit Amet</p>
-                    <p><b>Nama Panggilan :</b> Lorem Ipsum Dolor Sit Amet</p>
-                    <p><b>Nama Terlarang :</b> Lorem Ipsum Dolor Sit Amet</p>
-                    <p><b>Tanggal Lahir  :</b> Lorem Ipsum Dolor Sit Amet</p>
-                    <p><b>Planet Lahir   :</b> Lorem Ipsum Dolor Sit Amet</p>
-                    <p><b>Most loved     :</b> Lorem Ipsum Dolor Sit Amet</p>
+                <div class="cloud" id="cloud_2">
+                    <img src="src/images/cloud-2.png">
                 </div>
-            </div>
-    </div>
-    <div class="container">
-        <div class="cloud" id="cloud_1">
-            <img src="src/images/cloud-3.png">
-        </div>
-        <div class="cloud" id="cloud_2">
-            <img src="src/images/cloud-4.png">
-        </div>
-        <div class="flex-container" id="c2">
-            <div>
-                <h1 class="title" >Your Journey</h1>
-            </div>
-            <div class="bio">
-                <p><b>Nama           :</b> Lorem Ipsum Dolor Sit Amet</p>
-                <p><b>Nama Panggilan :</b> Lorem Ipsum Dolor Sit Amet</p>
-                <p><b>Nama Terlarang :</b> Lorem Ipsum Dolor Sit Amet</p>
-                <p><b>Tanggal Lahir  :</b> Lorem Ipsum Dolor Sit Amet</p>
-                <p><b>Planet Lahir   :</b> Lorem Ipsum Dolor Sit Amet</p>
-                <p><b>Most loved     :</b> Lorem Ipsum Dolor Sit Amet</p>
-            </div>
-            </div>
-    </div>
-    <div class="container">
-        <div class="cloud" id="cloud_1">
-            <img src="src/images/cloud-2.png">
-        </div>
-        <div class="cloud" id="cloud_2">
-            <img src="src/images/cloud-1.png">
-        </div>
-        <div class="flex-container" id="c3">
-            <div>
-                <h1 class="title" >In this 20 year...</h1>
-            </div>
-            <div class="cards">
-                <div class="card">
-
+                <div class="flex-container" id="c3">
+                    <h1 class="bd_title">Happy 20th Birthday!</h1>
+                    <h2 class="bd_name">Lorem Ipsum Dolor!</h2>
+                    <img class="image" src='src/images/j.png' style="width: 25%;">
                 </div>
             </div>
+            <div class="container" id="you">
+                <div class="cloud" id="cloud_3">
+                    <img src="src/images/cloud-2.png">
+                </div>
+                    <div class="flex-container">
+                        <div>
+                            <h1 class="title" >About You</h1>
+                        </div>
+                        <div class="bio">
+                            <p><b>Nama           :</b> Lorem Ipsum Dolor Sit Amet</p>
+                            <p><b>Nama Panggilan :</b> Lorem Ipsum Dolor Sit Amet</p>
+                            <p><b>Nama Terlarang :</b> Lorem Ipsum Dolor Sit Amet</p>
+                            <p><b>Tanggal Lahir  :</b> Lorem Ipsum Dolor Sit Amet</p>
+                            <p><b>Planet Lahir   :</b> Lorem Ipsum Dolor Sit Amet</p>
+                            <p><b>Most loved     :</b> Lorem Ipsum Dolor Sit Amet</p>
+                        </div>
+                    </div>
             </div>
-    </div>
-    <div class="container">
-        <h2 class="title" style="font-size:48px;">I wish you <span id="wish"></span></h2>
+            <div class="container" id="journey">
+                <div class="cloud" id="cloud_1">
+                    <img src="src/images/cloud-3.png">
+                </div>
+                <div class="cloud" id="cloud_2">
+                    <img src="src/images/cloud-4.png">
+                </div>
+                <div class="flex-container" id="c2">
+                    <div>
+                        <h1 class="title" >Your Journey</h1>
+                    </div>
+                    <div class="time">
+                        <div class="component">
+                            <div class="time_title">
+                                <span class="dot"></span> <span class="line"></span><h1>2001, Kamu lahir</h1>
+                            </div>
+                            <div class="time_desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at vehicula enim. Maecenas congue maximus tortor nec accumsan. Cras ut ligula mauris. </p>
+                            </div>
+                        </div>
+                        <div class="component">
+                            <div class="time_title">
+                                <span class="dot"></span> <span class="line"></span><h1>2007, SDIT Thariq Bin Ziyad</h1>
+                            </div>
+                            <div class="time_desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at vehicula enim. Maecenas congue maximus tortor nec accumsan. Cras ut ligula mauris. </p>
+                            </div>
+                        </div>
+                        <div class="component">
+                            <div class="time_title">
+                                <span class="dot"></span> <span class="line"></span><h1>2013, SMPIT Thariq Bin Ziyad</h1>
+                            </div>
+                            <div class="time_desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at vehicula enim. Maecenas congue maximus tortor nec accumsan. Cras ut ligula mauris. </p>
+                            </div>
+                        </div>
+                        <div class="component">
+                            <div class="time_title">
+                                <span class="dot"></span> <span class="line"></span><h1>2016, MAN Insan Cendekia Serpong</h1>
+                            </div>
+                            <div class="time_desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at vehicula enim. Maecenas congue maximus tortor nec accumsan. Cras ut ligula mauris. </p>
+                            </div>
+                        </div>
+                        <div class="component">
+                            <div class="time_title">
+                                <span class="dot"></span> <span class="line"></span><h1>2019, Institut Teknologi Bandung</h1>
+                            </div>
+                            <div class="time_desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at vehicula enim. Maecenas congue maximus tortor nec accumsan. Cras ut ligula mauris. </p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+            <div class="container" id="year">
+                <div class="cloud" id="cloud_1">
+                    <img src="src/images/cloud-2.png">
+                </div>
+                <div class="cloud" id="cloud_2">
+                    <img src="src/images/cloud-1.png">
+                </div>
+                <div class="flex-container" id="c3">
+                    <div>
+                        <h1 class="title" >In this 20 year...</h1>
+                    </div>
+                    <div class="box">
+                        <div class="cards">
+                            <div class="card">
+                                <img src="src/images/plchldr.jpg">
+                                <h3>Lorem</h3>
+                            </div>
+                            <div class="card">
+                                <img src="src/images/plchldr.jpg">
+                                <h3>Lorem</h3>
+                            </div>
+                            <div class="card">
+                                <img src="src/images/plchldr.jpg">
+                                <h3>Lorem</h3>
+                            </div>
+                            <div class="card">
+                                <img src="src/images/plchldr.jpg">
+                                <h3>Lorem</h3>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="src/images/plchldr.jpg">
+                                <h3>Lorem</h3>
+                            </div>
+                            <div class="card">
+                                <img src="src/images/plchldr.jpg">
+                                <h3>Lorem</h3>
+                            </div>
+                            <div class="card">
+                                <img src="src/images/plchldr.jpg">
+                                <h3>Lorem</h3>
+                            </div>
+                            <div class="card">
+                                <img src="src/images/plchldr.jpg">
+                                <h3>Lorem</h3>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+            <div class="container" id="wishes">
+                <h2 class="title" style="font-size:48px;">I wish you <span id="wish"></span></h2>
+            </div>
+        </div>
     </div>
     <script src="src/app.js"></script>
 </body>
