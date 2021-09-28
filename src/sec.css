@@ -158,6 +158,7 @@ letter-spacing: .25em;
 .slider {
   text-align: center;
   overflow: hidden;
+  z-index: 2;
 }
 
 .slides {
@@ -190,7 +191,6 @@ letter-spacing: .25em;
   position: relative;
   text-decoration: none;
   width: 7em;
-  z-index: 2;
   text-align: center;
   justify-content: center;
   transition: background-image 0.5s ease;
@@ -355,3 +355,27 @@ letter-spacing: .25em;
   .box::-webkit-scrollbar-thumb:hover {
   background: ##D83B57;  
   }
+
+.image, .card img{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: filter .5s ease, -webkit-filter .5s ease;
+}
+
+.image:hover, .card img:hover{
+  -webkit-filter: none; /* Safari 6.0 - 9.0 */
+  filter:none;
+}
+
+@keyframes cloud {
+  from {left: 0px;}
+  to {left: 1200px;}
+}
+
+#moving{
+  position:fixed;
+  z-index: -1;
+  animation: cloud 60s;
+  top:100px;
+  animation-iteration-count: infinite;
+}
