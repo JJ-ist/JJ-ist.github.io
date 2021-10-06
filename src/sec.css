@@ -11,6 +11,10 @@ body {
   text-align: center;
 }
 
+#bdimage, #hidden{
+  display: none;
+}
+
 .bd_title{
     font-size: 64px;
     font-weight: 700;
@@ -102,13 +106,22 @@ letter-spacing: .25em;
   padding: 1em 3em;
 } */
 
+.bio {
+  display: flex;
+  flex-direction: row;
+}
 .bio p {
     font-size: 24px;
 }
 
 .time {
+  display: grid;
+  grid-row-gap: .5em;
+  grid-column-gap: .5em;
+  grid-template-columns: auto auto;
   padding: 0em 2em;
 }
+
 .time .component {
   display: flex;
   flex-direction: column;
@@ -148,10 +161,14 @@ letter-spacing: .25em;
   border-radius: 10px;
   display: inline-block;
   align-self: center;
+  transition: width 0.5s ease;
+}
+
+.line:hover{
+  width: 100px;
 }
 
 .time_desc{
-  /* max-width: 20rem; */
   font-size: 16px;  
 }
 
@@ -163,7 +180,7 @@ letter-spacing: .25em;
 
 .slides {
   display: flex;
-  
+  align-items: center;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   
@@ -178,22 +195,21 @@ letter-spacing: .25em;
   */
 }
 .bn39 {
-  margin-top: 1em;
+  margin: .5em .5em;
   background-image: linear-gradient(135deg, #D83B57, #851b2f);
   border-radius: 50px;
   box-sizing: border-box;
   color: #ffffff;
   display: block;
-  height: 50px;
   font-size: 1.4em;
   font-weight: 600;
-  padding: 4px;
+  padding: 1em 4em;
   position: relative;
   text-decoration: none;
-  width: 7em;
   text-align: center;
   justify-content: center;
   transition: background-image 0.5s ease;
+  cursor: pointer;
 }
 
 .bn39:hover {
@@ -318,7 +334,7 @@ letter-spacing: .25em;
 }
 
 .card:hover{
-  box-shadow: 5px 10px #D83B57;
+  box-shadow: 0px 10px #D83B57;
 
 }
 .card img{
@@ -356,8 +372,8 @@ letter-spacing: .25em;
   background: ##D83B57;  
   }
 
-.image, .card img{
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+.image, .card img {
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition: filter .5s ease, -webkit-filter .5s ease;
 }
@@ -368,14 +384,131 @@ letter-spacing: .25em;
 }
 
 @keyframes cloud {
-  from {left: 0px;}
-  to {left: 1200px;}
+  from {left: -400px;}
+  to {left: 1600px;}
 }
 
 #moving{
   position:fixed;
   z-index: -1;
-  animation: cloud 60s;
+  animation: cloud 90s;
   top:100px;
   animation-iteration-count: infinite;
+}
+
+.inner-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner-flex p {
+  font-size: 20px;
+}
+
+.age_cont{
+  max-width: 2em;
+  background-color: #fcfcfc;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #D83B57;
+  color: #D83B57;
+  box-shadow: 0px 0px #D83B57;
+  transform: translateX(0px) translateY(0px);
+  transition: .5s ease;
+  margin: .1em;
+  padding: .1em;
+  text-align: center;
+}
+
+.age{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.age > h3{
+  font-size: 24px;
+  padding: 0em .25em;
+}
+
+.age_cont:hover{
+  transform: translateX(-10px) translateY(-10px);
+  box-shadow: 5px 10px #D83B57;
+}
+
+.age_cont h3{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.age_cont p{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 32px;
+  margin: 0px;
+}
+
+.bioinfo{
+  width: 2.5em;
+  background-color: #fcfcfc;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #67DE93;
+  color: #1b1b1b;
+  box-shadow: 0px 0px #67DE93;
+  transform: translateX(0px) translateX(0px);
+  transition: .5s ease;
+  text-align: center;
+  margin: .1em;
+}
+
+.bioinfo:hover{
+  transform: translateX(-10px) translateY(-10px);
+  box-shadow: 5px 10px #67DE93;
+}
+
+
+.bioinfo > div {
+  background-color: #67DE93;
+}
+
+.bioinfo h3{
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+
+.bioinfo p{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+#loading {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  background-color: #fff;
+  z-index: 99;
+}
+
+#loading-image {
+  z-index: 100;
+}
+
+.button-cont{
+  display: flex;
+  flex-direction: row;
 }
