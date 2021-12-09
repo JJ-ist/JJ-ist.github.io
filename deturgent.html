@@ -4,7 +4,7 @@
     <title>Deturgent</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/ico" href="src/favicon ykbs.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="src/images/deturgent.ico"/>
     <link rel="stylesheet" href ="src/deturgent.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
     <div class="sidebar" style="display:none;right:0;" id="mySidebar">
         <div class="sidebar-wrapper">
             <div class="end">   
-                <button onclick="SidebarClose()" ><i class="fi fi-br-cross-small"></i></button>
+                <button onclick="SidebarClose()" ><img src="svg/cross.svg" class="icon" id="cross"></button>
             </div>
             <a href="#about" onclick="SidebarClose()">ABOUT</a>
             <a href="#product" onclick="SidebarClose()">PRODUCTS</a>
@@ -35,10 +35,10 @@
                 <a href="#product">PRODUCTS</a>
             </button>
             <button id="logo-nav">
-                <img src="src/images/logo.png">
+                <img src="src/images/logo-deturg.png" class="logo">
             </button>
             <button onclick="SidebarOpen()" id="menu-nav">
-                <i class="fi fi-br-menu-burger"></i>
+                <img src="svg/menu-dots-vertical.svg" class="icon" id="menu">
             </button>
             <button id="text-nav">
                 <a href="#">SHOP</a>
@@ -51,11 +51,11 @@
             
             <div class="body-content">
                 <div class="image">
-                    <img src="src/images/splash-product.png" alt="Product">
+                    <img src="src/images/product.png" alt="Product">
                 </div>
                 <div class="content">
                     <h1>Deturgent</h1>
-                    <p>World first <span style="font-style: italic;">Averrhoa bilimbi</span> (Belimbing wuluh) based detergent. </p>
+                    <p>Indonesia first <span style="font-style: italic;">Averrhoa bilimbi</span> (Belimbing wuluh) based detergent. </p>
                 </div>
             </div>
             <div class="read-more">
@@ -67,31 +67,31 @@
         <div class="about-container">
             <div class="text-wrapper">
                 <h1>About Deturgent</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at ornare ligula. Aenean varius erat lacus, a pretium velit maximus sit amet. Etiam at sagittis nisi. Nam id urna quis sapien malesuada sagittis vitae vitae risus. Pellentesque blandit libero eget ante ultrices pulvinar. Donec in rutrum quam. Etiam ut lacus ac justo pellentesque sagittis. Quisque id faucibus quam. </p>
+                <p>Det-Urgent aims to be a major player in the green business industry, specializing in detergent products, however the reasoning behind this goes beyond simply searching for profit. The company also has an agenda to increase the awareness of how important green business is to the surrounding environment, moreover, the company has the agenda of taking advantage of local resources, particularly Belimbing Wuluh.</p>
             </div>
-            <img src="src/images/plcholder.png">
+            <img src="src/images/Product2.png">
         </div>
         <div class="belimbing-container">
-            <img src="src/images/plcholder.png">
+            <img src="src/images/bilimbi.jpg">
             <div class="text-wrapper right">
                 <h1>Belimbing Wuluh</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at ornare ligula. Aenean varius erat lacus, a pretium velit maximus sit amet. Etiam at sagittis nisi. Nam id urna quis sapien malesuada sagittis vitae vitae risus. Pellentesque blandit libero eget ante ultrices pulvinar. Donec in rutrum quam. Etiam ut lacus ac justo pellentesque sagittis. Quisque id faucibus quam. </p>
+                <p>Belimbing Wuluh is often overlooked in Indonesia. Its appearance may be unexceptional, however beneath the diminutive stature they have, lie an abundance of benefits and many other things. They are ubiquitous as they thrive magnificently in Indonesia’s climate and to nurture them we need not to spend extra effort. This is why Det-Urgent chose Belimbing Wuluh as the base for its brand.</p>
             </div>
         </div>
         </div>
     </section>
     <section class="value">
         <div class="val-container">
-            <i class="fi fi-br-feather"></i>
+            <img src="svg/feather.svg" class="icon">
             <h2>Eco-friendly</h2>
         </div>
         <div class="val-container">
-            <i class="fi fi-br-time-check"></i>
-            <h2>Long-lasting</h2>
+            <img src="svg/butterfly.svg" class="icon">
+            <h2>Gentle</h2>
         </div>
         <div class="val-container">
-            <i class="fi fi-br-thumbs-up"></i>
-            <h2>Enak baunya gan</h2>
+            <img src="svg/thumbs-up.svg" class="icon">
+            <h2>Fragrant</h2>
         </div>       
     </section>
     <section class="product" id="product">
@@ -99,11 +99,11 @@
         <div class="product-carousel">
             <div class="product">
                 <div class="img-wrapper">
-                    <img src="src/images/plcholder.png">
+                    <img src="src/images/Product3.png">
                 </div>
-                <h1>Lorem Perfume</h1>
+                <h1>Deturgent Cloth Detergent</h1>
             </div>
-            <div class="product">
+            <!-- <div class="product">
                 <div class="img-wrapper">
                     <img src="src/images/plcholder.png">
                 </div>
@@ -115,7 +115,7 @@
                 </div>
                 <h1>Lorem Perfume</h1>
             </div>
-            </div>
+            </div> -->
         </div>
     </section>
     <section class="footer" id="contact">
